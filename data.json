@@ -56,7 +56,7 @@
           "t": "Burs - Dernek",
           "n": "HTTP 200\n\nKullanıcıya ait bir durum. Fakat burs kategorisi test aşamasında da olsa kaldırılabilir. Aktif bir proje değil.",
           "id": "24dab36e08",
-          "s": "pending",
+          "s": "fail",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/burs"
         },
         {
