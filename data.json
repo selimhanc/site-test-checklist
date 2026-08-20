@@ -558,6 +558,138 @@
       ]
     },
     {
+      "name": "@de - Sayfalar",
+      "id": "pages-de",
+      "items": [
+        {
+          "t": "Bağış Yap - Dernek",
+          "n": "HTTP 200",
+          "id": "5f620a45a5",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/bagis"
+        },
+        {
+          "t": "Bağış Kategorileri - Dernek",
+          "n": "HTTP 200",
+          "id": "cc012e6d26",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/bagis-kategorileri"
+        },
+        {
+          "t": "Canli Yayinlar - Dernek",
+          "n": "HTTP 200",
+          "id": "a9441a165d",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/canli-yayin"
+        },
+        {
+          "t": "Çerez Politikası - Dernek",
+          "n": "HTTP 200",
+          "id": "36508e6ec6",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/cerez-politikasi"
+        },
+        {
+          "t": "Etkinlikler - Dernek",
+          "n": "HTTP 200",
+          "id": "2473a0e065",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/etkinlikler"
+        },
+        {
+          "t": "Fitre Hesaplayıcı - Dernek",
+          "n": "HTTP 200",
+          "id": "80e5c95f07",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/fitre-hesaplayici"
+        },
+        {
+          "t": "Giriş Yap / Üye Ol - Dernek",
+          "n": "HTTP 200",
+          "id": "358d5bf98f",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/giris"
+        },
+        {
+          "t": "Gizlilik Politikası - Dernek",
+          "n": "HTTP 200",
+          "id": "b84043f009",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/gizlilik-politikasi"
+        },
+        {
+          "t": "Gönüllü Ol - Dernek",
+          "n": "HTTP 200",
+          "id": "626a21a4d4",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/gonullu"
+        },
+        {
+          "t": "Haberler ve Duyurular - Dernek",
+          "n": "HTTP 200",
+          "id": "056c09b83e",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/haberler"
+        },
+        {
+          "t": "Hediye Kataloğu - Dernek",
+          "n": "HTTP 200",
+          "id": "67d24bc738",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/hediye-katalogu"
+        },
+        {
+          "t": "İletişim - Dernek",
+          "n": "HTTP 200",
+          "id": "d4cb38c742",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/iletisim"
+        },
+        {
+          "t": "Giriş Yap / Üye Ol - Dernek",
+          "n": "HTTP 200",
+          "id": "7e18d1de39",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/kayit"
+        },
+        {
+          "t": "KVKK Aydınlatma Metni - Dernek",
+          "n": "HTTP 200",
+          "id": "cb2eb5a3ba",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/kvkk"
+        },
+        {
+          "t": "Medya Galerisi - Dernek",
+          "n": "HTTP 200",
+          "id": "9c8991c0e0",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/medya"
+        },
+        {
+          "t": "Projeler - Dernek",
+          "n": "HTTP 200",
+          "id": "76e10f72e4",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/projeler"
+        },
+        {
+          "t": "Bağış Sepeti - Dernek",
+          "n": "HTTP 200",
+          "id": "a8e56846b6",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/sepet"
+        },
+        {
+          "t": "Zekat Hesaplayıcı - Dernek",
+          "n": "HTTP 200",
+          "id": "0bb0e7331c",
+          "s": "pass",
+          "u": "http://185.23.72.228/de/zekat-hesaplayici"
+        }
+      ]
+    },
+    {
       "name": "Kırık Linkler - Dil Değiştirici (404)",
       "id": "broken-locale",
       "items": [
