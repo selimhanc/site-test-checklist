@@ -145,9 +145,9 @@
         },
         {
           "t": "Etkinlikler - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nAdmin panelde önce çıkan görsel yüklenebiliyor arayüzde bu sayfada görünmüyor.",
           "id": "234833d9dd",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/etkinlikler"
         },
         {
