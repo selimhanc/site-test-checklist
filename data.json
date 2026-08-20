@@ -47,16 +47,16 @@
         },
         {
           "t": "Bağış Kategorileri - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nKategoriler de sorun yok. ",
           "id": "5ca2a3f689",
           "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri"
         },
         {
           "t": "Burs - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nKullanıcıya ait bir durum. Fakat burs kategorisi test aşamasında da olsa kaldırılabilir. Aktif bir proje değil.",
           "id": "24dab36e08",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/burs"
         },
         {
