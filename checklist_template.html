@@ -77,6 +77,9 @@ select.status.s-pending { background: #fffbeb; color: var(--pending); border-col
 .empty { text-align: center; color: var(--muted); padding: 30px 10px; font-size: 14px; }
 footer { text-align: center; color: var(--muted); font-size: 12px; padding: 20px; }
 footer .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; border-radius: 8px; padding: 8px 12px; display: inline-block; }
+.sync-status { font-size: 12px; color: var(--muted); padding: 2px 2px; min-height: 16px; }
+.sync-status.ok { color: var(--pass); }
+.sync-status.err { color: var(--fail); }
 .hidden { display: none !important; }
 @media (max-width: 640px) {
   .topbar .row { flex-direction: column; align-items: flex-start; }
@@ -106,12 +109,15 @@ footer .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; b
     <span class="spacer"></span>
     <button class="btn btn-outline" id="btnExport">JSON Dışa Aktar</button>
     <button class="btn btn-outline" id="btnImport">JSON İçe Aktar</button>
+    <button class="btn btn-outline" id="btnSyncLoad">GitHub'dan Yükle</button>
+    <button class="btn btn-primary" id="btnSyncSave">GitHub'a Kaydet</button>
     <button class="btn btn-outline" id="btnReset">Varsayılana Dön</button>
   </div>
+  <div id="syncStatus" class="sync-status">Yükleniyor…</div>
   <div id="cats"></div>
   <button class="add-cat" id="btnAddCat">+ Kategori Ekle</button>
   <footer>
-    <div class="hint">Veriler tarayıcınızda otomatik kaydedilir. Farklı tarayıcı/cihaz arasında taşımak için JSON dışa/içe aktarımı kullanın.</div>
+    <div class="hint">Değişiklikler tarayıcıda otomatik kaydedilir. Kalıcı yedek için <b>GitHub'a Kaydet</b> ile repo'ya commit atılır; <b>GitHub'dan Yükle</b> son kaydı getirir. Token yalnızca senin tarayıcında saklanır.</div>
   </footer>
 </div>
 
@@ -292,7 +298,78 @@ document.getElementById('btnAddCat').addEventListener('click', () => {
 document.getElementById('btnCollapse').addEventListener('click', () => {
   const all = Object.keys(state.collapsed).length === data.categories.length && data.categories.every(c => state.collapsed[c.id]);
   data.categories.forEach(c => state.collapsed[c.id] = !all);
-  render();
+/* ======= GitHub senkronizasyonu ======= */
+const GITHUB_REPO = 'selimhanc/site-test-checklist';
+const TOKEN_KEY = 'site-checklist-token';
+const syncStatus = document.getElementById('syncStatus');
+
+function setSync(msg, cls) {
+  syncStatus.textContent = msg;
+  syncStatus.className = 'sync-status' + (cls ? ' ' + cls : '');
+}
+
+function getToken() {
+  let t = localStorage.getItem(TOKEN_KEY);
+  if (!t) {
+    t = prompt('GitHub kişisel erişim token\'ınızı girin (repo + read:org scope):').trim();
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+  }
+  return t;
+}
+
+function gitHubHeaders() {
+  return { 'Authorization': 'Bearer ' + getToken(), 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+}
+
+function b64(s) {
+  return btoa(unescape(encodeURIComponent(s)));
+}
+
+async function gitHubLoad() {
+  const url = 'https://raw.githubusercontent.com/' + GITHUB_REPO + '/main/data.json';
+  try {
+    const r = await fetch(url, { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if (!d || !Array.isArray(d.categories)) throw new Error('geçersiz veri');
+    data = d; save(); render();
+    setSync('GitHub\'dan son kayıt yüklendi', 'ok');
+  } catch(e) {
+    setSync('GitHub verisi yüklenemedi — yerel kayıt kullanılıyor (' + e.message + ')', 'err');
+  }
+}
+
+async function gitHubSave() {
+  const token = getToken();
+  if (!token) { setSync('Token girilmedi', 'err'); return; }
+  setSync('Kaydediliyor…');
+  const content = JSON.stringify(data, null, 2);
+  const api = 'https://api.github.com/repos/' + GITHUB_REPO + '/contents/data.json';
+  let sha = null;
+  try {
+    const existing = await fetch(api, { headers: gitHubHeaders() });
+    if (existing.ok) sha = (await existing.json()).sha;
+    const res = await fetch(api, {
+      method: 'PUT',
+      headers: gitHubHeaders(),
+      body: JSON.stringify({
+        message: 'checklist güncellemesi ' + new Date().toISOString(),
+        content: b64(content),
+        sha: sha || undefined
+      })
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status + ': ' + (await res.text()).slice(0, 200));
+    setSync('GitHub\'a kaydedildi ✓ ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
+  } catch(e) {
+    setSync('Kaydetme başarısız: ' + e.message, 'err');
+  }
+}
+
+document.getElementById('btnSyncLoad').addEventListener('click', gitHubLoad);
+document.getElementById('btnSyncSave').addEventListener('click', gitHubSave);
+
+render();
+gitHubLoad();
 });
 
 document.getElementById('search').addEventListener('input', e => { state.search = e.target.value; render(); });
