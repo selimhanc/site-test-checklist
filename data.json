@@ -68,79 +68,79 @@
         },
         {
           "t": "Genel Bağış - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nKontrol tamamlandı sorun yok.",
           "id": "812358cfff",
           "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "İnsani Yardım - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nBu kategori kalkabilir ",
           "id": "d5bf9c5049",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "Okul Yapımı - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nBu kategori kalkabilir",
           "id": "a356f8e337",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/okul-yapimi"
         },
         {
           "t": "Sağlık - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nBu kategori kalkabilir.",
           "id": "f9b9c6dff7",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "Canli Yayinlar - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nDaha çok rtmp protokolü ile steramyard tarzı entegrasyonlar düşünmüştük ama şuan kapsam dışı kalabilir.",
           "id": "ca79c385be",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin"
         },
         {
           "t": "Gıda Yardımı Kampanyası 2024 - Canli Yayin - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
           "id": "f3684f3203",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin/gida-yardimi-kampanyasi-2024"
         },
         {
           "t": "Kurban Bayramı Özel Yayını - Canli Yayin - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
           "id": "961c9fefa4",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin/kurban-bayrami-ozel-yayin"
         },
         {
           "t": "Ramazan Canlı Bağış Gecesi - Canli Yayin - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
           "id": "f720a50757",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin/ramazan-canli-bagis-gecesi"
         },
         {
           "t": "Su Kuyusu Projesi Tanıtım Yayını - Canli Yayin - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
           "id": "0fd7bf8070",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin/su-kuyusu-projesi-tanitimi"
         },
         {
           "t": "Yetim Destek Programı Bilgilendirme - Canli Yayin - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
           "id": "ee61c55c14",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/canli-yayin/yetim-destek-programi"
         },
         {
           "t": "Çerez Politikası - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nStandart İçerik metni çalışılacak.",
           "id": "5551674e7e",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/cerez-politikasi"
         },
         {
