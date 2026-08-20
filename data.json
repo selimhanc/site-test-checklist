@@ -1,0 +1,2203 @@
+{
+    "categories":  [
+                       {
+                           "name":  "Ana Sayfa (tüm diller)",
+                           "id":  "home",
+                           "items":  [
+                                         {
+                                             "t":  "Dernek - Ana Sayfa",
+                                             "n":  "HTTP 200",
+                                             "id":  "2dd13ecd2d",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr"
+                                         },
+                                         {
+                                             "t":  "Dernek - Home Page",
+                                             "n":  "HTTP 200",
+                                             "id":  "5ae85c9939",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en"
+                                         },
+                                         {
+                                             "t":  "Dernek - Ana Sayfa",
+                                             "n":  "HTTP 200",
+                                             "id":  "a074501395",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar"
+                                         },
+                                         {
+                                             "t":  "Dernek - Ana Sayfa",
+                                             "n":  "HTTP 200",
+                                             "id":  "7bb364ecd3",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "@tr - Sayfalar",
+                           "id":  "pages-tr",
+                           "items":  [
+                                         {
+                                             "t":  "Bağış Yap - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "41e34eacde",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis"
+                                         },
+                                         {
+                                             "t":  "Bağış Kategorileri - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "5ca2a3f689",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "Burs - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "24dab36e08",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/burs"
+                                         },
+                                         {
+                                             "t":  "Eğitim - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "4b5d68faeb",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "Genel Bağış - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "812358cfff",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "İnsani Yardım - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "d5bf9c5049",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "Okul Yapımı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a356f8e337",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/okul-yapimi"
+                                         },
+                                         {
+                                             "t":  "Sağlık - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "f9b9c6dff7",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "Canli Yayinlar - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "ca79c385be",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "Gıda Yardımı Kampanyası 2024 - Canli Yayin - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "f3684f3203",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin/gida-yardimi-kampanyasi-2024"
+                                         },
+                                         {
+                                             "t":  "Kurban Bayramı Özel Yayını - Canli Yayin - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "961c9fefa4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin/kurban-bayrami-ozel-yayin"
+                                         },
+                                         {
+                                             "t":  "Ramazan Canlı Bağış Gecesi - Canli Yayin - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "f720a50757",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin/ramazan-canli-bagis-gecesi"
+                                         },
+                                         {
+                                             "t":  "Su Kuyusu Projesi Tanıtım Yayını - Canli Yayin - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "0fd7bf8070",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin/su-kuyusu-projesi-tanitimi"
+                                         },
+                                         {
+                                             "t":  "Yetim Destek Programı Bilgilendirme - Canli Yayin - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "ee61c55c14",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/canli-yayin/yetim-destek-programi"
+                                         },
+                                         {
+                                             "t":  "Çerez Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "5551674e7e",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "Etkinlikler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "234833d9dd",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "Faaliyet Alanları",
+                                             "n":  "HTTP 200",
+                                             "id":  "3ddd5de345",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "Fitre Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "161d9a036f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "274e332ed1",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/giris"
+                                         },
+                                         {
+                                             "t":  "Gizlilik Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "6b4c4ad7d3",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "Gönüllü Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "41c645a3c8",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/gonullu"
+                                         },
+                                         {
+                                             "t":  "Haberler ve Duyurular - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "c1d207fa88",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/haberler"
+                                         },
+                                         {
+                                             "t":  "Eğitim Bursu Programı Güncelleme",
+                                             "n":  "HTTP 200",
+                                             "id":  "e4b6269f4b",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "Kurban Bayramı Kampanyası",
+                                             "n":  "HTTP 200",
+                                             "id":  "bf995e90d9",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "Ramazan Kampanyası Duyurusu",
+                                             "n":  "HTTP 200",
+                                             "id":  "a7a039ae7c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "Yeni Su Kuyusu Projesi Başlatıldı",
+                                             "n":  "HTTP 200",
+                                             "id":  "672fdc047f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "Hakkımızda",
+                                             "n":  "HTTP 200",
+                                             "id":  "4a02001a3d",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "Hediye Kataloğu - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "3039b32f27",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "İletişim - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "7c6c2e7045",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/iletisim"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "63839d70a9",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/kayit"
+                                         },
+                                         {
+                                             "t":  "2026 Kurban - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "df6f89a534",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "KVKK Aydınlatma Metni - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "24310769cf",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/kvkk"
+                                         },
+                                         {
+                                             "t":  "Medya Galerisi - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "eaa859e33c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/medya"
+                                         },
+                                         {
+                                             "t":  "Misyonumuz",
+                                             "n":  "HTTP 200",
+                                             "id":  "c944c9e58d",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "Projeler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "3a0ed04cc4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/projeler"
+                                         },
+                                         {
+                                             "t":  "1000 Öğrenciye Burs - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "bb0478a561",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/projeler/1000-ogrenciye-burs"
+                                         },
+                                         {
+                                             "t":  "Kış Yardımı 2026 - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "8e4245a330",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/projeler/kis-yardimi-2026"
+                                         },
+                                         {
+                                             "t":  "Mobil Sağlık Aracı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "07f5aad995",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/projeler/mobil-saglik-araci"
+                                         },
+                                         {
+                                             "t":  "Bağış Sepeti - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a6daf08c42",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/sepet"
+                                         },
+                                         {
+                                             "t":  "Şifremi Unuttum - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "ec8eae8205",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/sifremi-unuttum"
+                                         },
+                                         {
+                                             "t":  "Vizyonumuz",
+                                             "n":  "HTTP 200",
+                                             "id":  "c794ebed86",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "Zekat Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "5f35d17165",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/tr/zekat-hesaplayici"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "@en - Sayfalar",
+                           "id":  "pages-en",
+                           "items":  [
+                                         {
+                                             "t":  "About Us",
+                                             "n":  "HTTP 200",
+                                             "id":  "012e39054f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/about-us"
+                                         },
+                                         {
+                                             "t":  "Activity Areas",
+                                             "n":  "HTTP 200",
+                                             "id":  "331508de9c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/activity-areas"
+                                         },
+                                         {
+                                             "t":  "Make a donation - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "c540aba06c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis"
+                                         },
+                                         {
+                                             "t":  "Donation Categories - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "8092b3a477",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "Education - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "6ab817766e",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/education"
+                                         },
+                                         {
+                                             "t":  "General Donation - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "e52abd2a40",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/general-donation"
+                                         },
+                                         {
+                                             "t":  "Health - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "3fcaca046f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/health"
+                                         },
+                                         {
+                                             "t":  "Humanitarian Aid - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "bf5ce6c1ec",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/humanitarian-aid"
+                                         },
+                                         {
+                                             "t":  "Live Broadcasts - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "659a60d662",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "Cookie Policy - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "2e41ec75cf",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "Events - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "508d82d15c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "Fitre Calculator - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "b4079e4966",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "53a915bc87",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/giris"
+                                         },
+                                         {
+                                             "t":  "Privacy Policy - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "8250062b3b",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "Volunteer - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "fd58062824",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/gonullu"
+                                         },
+                                         {
+                                             "t":  "News and Announcements - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "de57aadaf4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/haberler"
+                                         },
+                                         {
+                                             "t":  "Education Scholarship Program Update",
+                                             "n":  "HTTP 200",
+                                             "id":  "4e45eea98f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/haberler/education-scholarship-update"
+                                         },
+                                         {
+                                             "t":  "Eid al-Adha Campaign",
+                                             "n":  "HTTP 200",
+                                             "id":  "3d867929fa",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/haberler/eid-al-adha-campaign"
+                                         },
+                                         {
+                                             "t":  "New Water Well Project Launched",
+                                             "n":  "HTTP 200",
+                                             "id":  "8a157766dd",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/haberler/new-water-well-project-launched"
+                                         },
+                                         {
+                                             "t":  "Ramadan Campaign Announcement",
+                                             "n":  "HTTP 200",
+                                             "id":  "a64638e6d6",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/haberler/ramadan-campaign-announcement"
+                                         },
+                                         {
+                                             "t":  "Gift Catalog - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "93e517131e",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "Communication - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "ad09f22245",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/iletisim"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "78d2dc7517",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/kayit"
+                                         },
+                                         {
+                                             "t":  "2026 Qurbani Campaign - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "4ab8d9b57b",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/kurban/2026-qurbani-campaign"
+                                         },
+                                         {
+                                             "t":  "KVKK Information Text - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "118f7de1ac",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/kvkk"
+                                         },
+                                         {
+                                             "t":  "Media Gallery - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "50e96f7bf4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/medya"
+                                         },
+                                         {
+                                             "t":  "Our Mission",
+                                             "n":  "HTTP 200",
+                                             "id":  "701dee5277",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/our-mission"
+                                         },
+                                         {
+                                             "t":  "Our Vision",
+                                             "n":  "HTTP 200",
+                                             "id":  "745f84886f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/our-vision"
+                                         },
+                                         {
+                                             "t":  "Projects - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "0b09ad00aa",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/projeler"
+                                         },
+                                         {
+                                             "t":  "Donation Basket - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "c62ac14e3a",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/sepet"
+                                         },
+                                         {
+                                             "t":  "Zakat Calculator - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "389f911ddd",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/en/zekat-hesaplayici"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "@ar - Sayfalar",
+                           "id":  "pages-ar",
+                           "items":  [
+                                         {
+                                             "t":  "Bağış Yap - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "eba46c0944",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/bagis"
+                                         },
+                                         {
+                                             "t":  "Bağış Kategorileri - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a68ed2fd04",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "Canli Yayinlar - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "343ae0114a",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "Çerez Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "e92aa6f784",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "Etkinlikler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "22d0c917ba",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "Fitre Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "e3d73aaf0c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "36fa86764c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/giris"
+                                         },
+                                         {
+                                             "t":  "Gizlilik Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "65d9bbeb3b",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "Gönüllü Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "743059791a",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/gonullu"
+                                         },
+                                         {
+                                             "t":  "Haberler ve Duyurular - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "fde38eabc7",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/haberler"
+                                         },
+                                         {
+                                             "t":  "Hediye Kataloğu - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "d0e1933e9a",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "İletişim - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "56c2c9faec",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/iletisim"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "4ab3b377bc",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/kayit"
+                                         },
+                                         {
+                                             "t":  "حملة الأضاحي 2026 - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "8aad9bfad9",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/kurban/%D8%AD%D9%85%D9%84%D8%A9-%D8%A7%D9%84%D8%A7%D8%B6%D8%A7%D8%AD%D9%8A-2026"
+                                         },
+                                         {
+                                             "t":  "KVKK Aydınlatma Metni - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "54e7cd8323",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/kvkk"
+                                         },
+                                         {
+                                             "t":  "Medya Galerisi - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a2c875f479",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/medya"
+                                         },
+                                         {
+                                             "t":  "Projeler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "86df49c92d",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/projeler"
+                                         },
+                                         {
+                                             "t":  "Bağış Sepeti - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "dc48175c17",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/sepet"
+                                         },
+                                         {
+                                             "t":  "Zekat Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "ec504b1a49",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/ar/zekat-hesaplayici"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "@de - Sayfalar",
+                           "id":  "pages-de",
+                           "items":  [
+                                         {
+                                             "t":  "Bağış Yap - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "5f620a45a5",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/bagis"
+                                         },
+                                         {
+                                             "t":  "Bağış Kategorileri - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "cc012e6d26",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "Canli Yayinlar - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a9441a165d",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "Çerez Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "36508e6ec6",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "Etkinlikler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "2473a0e065",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "Fitre Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "80e5c95f07",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "358d5bf98f",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/giris"
+                                         },
+                                         {
+                                             "t":  "Gizlilik Politikası - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "b84043f009",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "Gönüllü Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "626a21a4d4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/gonullu"
+                                         },
+                                         {
+                                             "t":  "Haberler ve Duyurular - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "056c09b83e",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/haberler"
+                                         },
+                                         {
+                                             "t":  "Hediye Kataloğu - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "67d24bc738",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "İletişim - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "d4cb38c742",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/iletisim"
+                                         },
+                                         {
+                                             "t":  "Giriş Yap / Üye Ol - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "7e18d1de39",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/kayit"
+                                         },
+                                         {
+                                             "t":  "KVKK Aydınlatma Metni - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "cb2eb5a3ba",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/kvkk"
+                                         },
+                                         {
+                                             "t":  "Medya Galerisi - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "9c8991c0e0",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/medya"
+                                         },
+                                         {
+                                             "t":  "Projeler - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "76e10f72e4",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/projeler"
+                                         },
+                                         {
+                                             "t":  "Bağış Sepeti - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "a8e56846b6",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/sepet"
+                                         },
+                                         {
+                                             "t":  "Zekat Hesaplayıcı - Dernek",
+                                             "n":  "HTTP 200",
+                                             "id":  "0bb0e7331c",
+                                             "s":  "pass",
+                                             "u":  "http://185.23.72.228/de/zekat-hesaplayici"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "Kırık Linkler - Dil Değiştirici (404)",
+                           "id":  "broken-locale",
+                           "items":  [
+                                         {
+                                             "t":  "http://185.23.72.228/ar/ar",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "8e575086b8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/ar"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/en",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4989430236",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/en"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "bcf6330d7e",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "149544a025",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis-kategorileri",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "09913a5fb5",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "84f65c1e80",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f1b04d07a1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "8151b6d4dd",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "b0df7de9ba",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/canli-yayin",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "6001807c02",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/cerez-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "127948e0d1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/etkinlikler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "29831316fb",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/faaliyet-alanlari",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "8957b171a5",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/fitre-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "74f7b1e28b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/giris",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a0ae6b3fa9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/giris"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/gizlilik-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "5319bf8baa",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/gonullu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "e4fbf09e62",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/gonullu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/haberler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "40b29430b2",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/haberler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "3213eef527",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "05ea11f360",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f819239234",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "bcdc1789a5",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/hakkimizdabbbb",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "250e5e4059",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/hediye-katalogu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "44068c98be",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/iletisim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "875386015f",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/iletisim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/kayit",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f9b4ae5291",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/kayit"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/kurban/2026-kurban",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "99874e0b2b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/kvkk",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4ca6fffe0f",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/kvkk"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/medya",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "bb979f6433",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/medya"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/misyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a6decad64b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/projeler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "9e60de3a8f",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/projeler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/sepet",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "b0911ffa3b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/sepet"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/vizyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "94762317cd",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/tr/zekat-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ff38700546",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/tr/zekat-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/ar",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "cae94465f8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/ar"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/en",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "c39d34debc",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/en"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ff7eb86cfc",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "6d489dc238",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis-kategorileri",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "53023227f1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a14f32b5f1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ec97c87014",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "02f25a98ed",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "cc26def4f3",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/canli-yayin",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "68cacb1f9b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/cerez-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "0594c06305",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/etkinlikler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "c69ebdfda6",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/faaliyet-alanlari",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "b9d6b44381",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/fitre-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4e382398f6",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/giris",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "5030172f0d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/giris"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/gizlilik-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "43395233d2",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/gonullu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "1b28550d05",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/gonullu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/haberler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "d7276762e7",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/haberler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "0d6b30fb84",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ce1a2036e1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "60c80cc84e",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "1eb45e29ea",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/hakkimizdabbbb",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "719bf6ce96",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/hediye-katalogu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f7a9087b73",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/iletisim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "215ad21509",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/iletisim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/kayit",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "59acb6aba9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/kayit"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/kurban/2026-kurban",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "dd52b6082d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/kvkk",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "7855c3c77d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/kvkk"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/medya",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "7a77bff082",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/medya"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/misyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "7a1c083524",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/projeler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "910c99638a",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/projeler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/sepet",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f2e1a645e5",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/sepet"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/vizyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ca15698918",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/tr/zekat-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "2147d0ac84",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/tr/zekat-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/ar",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ccb4d7fb5d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/ar"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/en",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "fe8d441c0d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/en"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "539feb3e34",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4e6b316d57",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis-kategorileri",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "34569aef89",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4a295c4217",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "1f7d0e558c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "0bffbe9fae",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "bdd66ff0c4",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/canli-yayin",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "18a10d366e",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/cerez-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4fc381248c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/etkinlikler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "98f1ddb12c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/faaliyet-alanlari",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "04f8f07baa",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/fitre-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "86dd2ffb0f",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/giris",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a921194df3",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/giris"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/gizlilik-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "73e2cfbe7d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/gonullu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "25d5c52f8c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/gonullu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/haberler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "3471176331",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/haberler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "e6af0160b0",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "6665faa364",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4cb14b9d80",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a03141de08",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/hakkimizdabbbb",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "119a44381d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/hediye-katalogu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "05bbf3f1b3",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/iletisim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ed6f4563df",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/iletisim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/kayit",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "0d2034644c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/kayit"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/kurban/2026-kurban",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "5494d40fc9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/kvkk",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "ea9e63bfc6",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/kvkk"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/medya",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "3e753ea0c0",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/medya"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/misyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4f0f926f6c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/projeler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a31985947a",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/projeler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/sepet",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "2105397ad8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/sepet"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/vizyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "24919642f0",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/tr/zekat-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "25eb00e702",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/tr/zekat-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/ar",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "0ffe2410e7",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/ar"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/en",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "9d0c25cf28",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/en"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "3264ef6283",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "e22afd23e4",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis-kategorileri",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "c3c7928601",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis-kategorileri"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "108d178fcd",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "7f5a38cf47",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "2ecb19ef65",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "a63b0bacf6",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/canli-yayin",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "f639d0e180",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/canli-yayin"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/cerez-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "fbe38bedbe",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/cerez-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/etkinlikler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "d94bdd4ace",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/etkinlikler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/faaliyet-alanlari",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "c027673e7c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/fitre-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "49d98e4da6",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/fitre-hesaplayici"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/giris",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "6fc623d1d8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/giris"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/gizlilik-politikasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "96250cac05",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/gizlilik-politikasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/gonullu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "9895abf88b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/gonullu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/haberler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "9840ac4481",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/haberler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "81114b7a41",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "c569597c2b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "2fa1e2ca0b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "b2023a38ad",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/hakkimizdabbbb",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "44c564c8db",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/hediye-katalogu",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "57c6d87ba9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/hediye-katalogu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/iletisim",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "6144a01d8d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/iletisim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/kayit",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "4e22058107",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/kayit"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/kurban/2026-kurban",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "12b9e01adc",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/kvkk",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "15b4a21e9a",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/kvkk"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/medya",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "d4e1df81ea",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/medya"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/misyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "dd9b0749e3",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/projeler",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "237221299f",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/projeler"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/sepet",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "95b586025d",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/sepet"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/vizyonumuz",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "fa630e25cf",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/tr/tr/zekat-hesaplayici",
+                                             "n":  "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+                                             "id":  "e21fbfd694",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/tr/tr/zekat-hesaplayici"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "Kırık Linkler - Diğer (404)",
+                           "id":  "broken-other",
+                           "items":  [
+                                         {
+                                             "t":  "http://185.23.72.228/ar/about-us",
+                                             "n":  "HTTP 404",
+                                             "id":  "fde50725e9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/about-us"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/activity-areas",
+                                             "n":  "HTTP 404",
+                                             "id":  "916b77ae23",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/activity-areas"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/education",
+                                             "n":  "HTTP 404",
+                                             "id":  "cf77369071",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/education"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404",
+                                             "id":  "182845eb7b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404",
+                                             "id":  "8505bef830",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/general-donation",
+                                             "n":  "HTTP 404",
+                                             "id":  "c37037252c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/general-donation"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/humanitarian-aid",
+                                             "n":  "HTTP 404",
+                                             "id":  "8d5264e270",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/humanitarian-aid"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404",
+                                             "id":  "cf318d794e",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404",
+                                             "id":  "d4e9ea32f3",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/faaliyet-alanlari",
+                                             "n":  "HTTP 404",
+                                             "id":  "8bcad13cba",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404",
+                                             "id":  "458d0cf6b7",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404",
+                                             "id":  "71de0b22be",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/haberler/new-water-well-project-launched",
+                                             "n":  "HTTP 404",
+                                             "id":  "4c2540c0ec",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/haberler/new-water-well-project-launched"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404",
+                                             "id":  "2186c6e0a1",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404",
+                                             "id":  "5e8ec2c890",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/hakkimizdabbbb",
+                                             "n":  "HTTP 404",
+                                             "id":  "9bded03092",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/kurban/2026-kurban",
+                                             "n":  "HTTP 404",
+                                             "id":  "bd251ea1f0",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/misyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "8b8a218817",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/our-mission",
+                                             "n":  "HTTP 404",
+                                             "id":  "7b5166a7eb",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/our-mission"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/our-vision",
+                                             "n":  "HTTP 404",
+                                             "id":  "b7dd01b762",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/our-vision"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/ar/vizyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "64a705cfd8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/ar/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404",
+                                             "id":  "043b71dfee",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404",
+                                             "id":  "ff5d8ad846",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404",
+                                             "id":  "2cb2d84f78",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404",
+                                             "id":  "c6e18c133b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/faaliyet-alanlari",
+                                             "n":  "HTTP 404",
+                                             "id":  "00ebee76bd",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404",
+                                             "id":  "6004680e92",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404",
+                                             "id":  "e668b80984",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404",
+                                             "id":  "c3bb312a52",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404",
+                                             "id":  "bbc88ba9bf",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/hakkimizdabbbb",
+                                             "n":  "HTTP 404",
+                                             "id":  "2522e01352",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/kurban/2026-kurban",
+                                             "n":  "HTTP 404",
+                                             "id":  "0f947e1df9",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/misyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "9fcb3b3edd",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/de/vizyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "8f6f5dc248",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/de/vizyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/bagis-kategorileri/egitim",
+                                             "n":  "HTTP 404",
+                                             "id":  "68c326c519",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/egitim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/bagis-kategorileri/genel-bagis",
+                                             "n":  "HTTP 404",
+                                             "id":  "36da292040",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/genel-bagis"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/bagis-kategorileri/insani-yardim",
+                                             "n":  "HTTP 404",
+                                             "id":  "12f12bbe36",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/insani-yardim"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/bagis-kategorileri/saglik",
+                                             "n":  "HTTP 404",
+                                             "id":  "28c1afdf02",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/bagis-kategorileri/saglik"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/faaliyet-alanlari",
+                                             "n":  "HTTP 404",
+                                             "id":  "03b9471027",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/faaliyet-alanlari"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/haberler/egitim-bursu-guncelleme",
+                                             "n":  "HTTP 404",
+                                             "id":  "e4e7c10c38",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/haberler/egitim-bursu-guncelleme"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/haberler/kurban-bayrami-kampanyasi",
+                                             "n":  "HTTP 404",
+                                             "id":  "840edb7e32",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/haberler/kurban-bayrami-kampanyasi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/haberler/ramazan-kampanyasi-duyurusu",
+                                             "n":  "HTTP 404",
+                                             "id":  "40feefb97a",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/haberler/ramazan-kampanyasi-duyurusu"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/haberler/yeni-su-kuyusu-projesi-baslatildi",
+                                             "n":  "HTTP 404",
+                                             "id":  "ffdbf63d73",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/haberler/yeni-su-kuyusu-projesi-baslatildi"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/hakkimizdabbbb",
+                                             "n":  "HTTP 404",
+                                             "id":  "99ed0a1112",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/hakkimizdabbbb"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/kurban/2026-kurban",
+                                             "n":  "HTTP 404",
+                                             "id":  "a7d8ea741c",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/kurban/2026-kurban"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/misyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "f2351121e8",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/misyonumuz"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/en/vizyonumuz",
+                                             "n":  "HTTP 404",
+                                             "id":  "0def663c56",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/en/vizyonumuz"
+                                         }
+                                     ]
+                       },
+                       {
+                           "name":  "Eksik / Bozuk Assetler (404)",
+                           "id":  "assets",
+                           "items":  [
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-1.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "7dfff0d406",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-1.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-10.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "d09d3f1c44",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-10.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-2.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "8058dd1fc5",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-2.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-3.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "b50a9a60f4",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-3.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-4.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "6ec5436906",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-4.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-5.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "9c0c61e5ee",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-5.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-6.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "b6989ae37b",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-6.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-7.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "ceb53751ba",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-7.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-8.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "89699623a2",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-8.jpg"
+                                         },
+                                         {
+                                             "t":  "http://185.23.72.228/storage/media/gallery/gallery-image-9.jpg",
+                                             "n":  "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+                                             "id":  "e44da27d61",
+                                             "s":  "fail",
+                                             "u":  "http://185.23.72.228/storage/media/gallery/gallery-image-9.jpg"
+                                         }
+                                     ]
+                       }
+                   ],
+    "generated":  "2026-08-20 17:59",
+    "base":  "http://185.23.72.228"
+}
