@@ -40,9 +40,9 @@
       "items": [
         {
           "t": "Bağış Yap - Dernek",
-          "n": "HTTP 200\n\nBağış kategorileri görselleri değişimi admin panelinden kontrol edilecek.",
+          "n": "HTTP 200\n\nBağış kategorileri görselleri değişimi admin panelinden kontrol edilecek.\n\nKontrol tamamlandı görseller güncellenebiliyor.",
           "id": "41e34eacde",
-          "s": "pending",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/bagis"
         },
         {
