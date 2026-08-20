@@ -54,9 +54,9 @@
         },
         {
           "t": "Burs - Dernek",
-          "n": "HTTP 200\n\nKullanıcıya ait bir durum. Fakat burs kategorisi test aşamasında da olsa kaldırılabilir. Aktif bir proje değil.",
+          "n": "HTTP 200\n\nKullanıcıya ait bir durum. Fakat burs kategorisi test aşamasında da olsa kaldırılabilir. Aktif bir proje değil. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, bu bir içerik/kapsam kararı. Kategori kaldırılmak istendiğinde iki yol var: (a) admin panel → Bağış Yönetimi → Bağış Kategorileri → ilgili kaydı 'Aktif' kapatmak — sayfa ve menüden düşer, geçmiş bağış kayıtları ve bağlı projeler bozulmaz, karar geri alınabilir; (b) tamamen silmek — bu kategoriye bağlı proje/bağış kaydı varsa veri kaybı riski taşır, önerilmez. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; kaldırma isteği ayrı bir içerik kararı olarak takip edilecek.",
           "id": "24dab36e08",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/burs"
         },
         {
@@ -75,79 +75,79 @@
         },
         {
           "t": "İnsani Yardım - Dernek",
-          "n": "HTTP 200\n\nBu kategori kalkabilir ",
+          "n": "HTTP 200\n\nBu kategori kalkabilir || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, bu bir içerik/kapsam kararı. Kategori kaldırılmak istendiğinde iki yol var: (a) admin panel → Bağış Yönetimi → Bağış Kategorileri → ilgili kaydı 'Aktif' kapatmak — sayfa ve menüden düşer, geçmiş bağış kayıtları ve bağlı projeler bozulmaz, karar geri alınabilir; (b) tamamen silmek — bu kategoriye bağlı proje/bağış kaydı varsa veri kaybı riski taşır, önerilmez. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; kaldırma isteği ayrı bir içerik kararı olarak takip edilecek.",
           "id": "d5bf9c5049",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "Okul Yapımı - Dernek",
-          "n": "HTTP 200\n\nBu kategori kalkabilir",
+          "n": "HTTP 200\n\nBu kategori kalkabilir || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, bu bir içerik/kapsam kararı. Kategori kaldırılmak istendiğinde iki yol var: (a) admin panel → Bağış Yönetimi → Bağış Kategorileri → ilgili kaydı 'Aktif' kapatmak — sayfa ve menüden düşer, geçmiş bağış kayıtları ve bağlı projeler bozulmaz, karar geri alınabilir; (b) tamamen silmek — bu kategoriye bağlı proje/bağış kaydı varsa veri kaybı riski taşır, önerilmez. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; kaldırma isteği ayrı bir içerik kararı olarak takip edilecek.",
           "id": "a356f8e337",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/okul-yapimi"
         },
         {
           "t": "Sağlık - Dernek",
-          "n": "HTTP 200\n\nBu kategori kalkabilir.",
+          "n": "HTTP 200\n\nBu kategori kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, bu bir içerik/kapsam kararı. Kategori kaldırılmak istendiğinde iki yol var: (a) admin panel → Bağış Yönetimi → Bağış Kategorileri → ilgili kaydı 'Aktif' kapatmak — sayfa ve menüden düşer, geçmiş bağış kayıtları ve bağlı projeler bozulmaz, karar geri alınabilir; (b) tamamen silmek — bu kategoriye bağlı proje/bağış kaydı varsa veri kaybı riski taşır, önerilmez. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; kaldırma isteği ayrı bir içerik kararı olarak takip edilecek.",
           "id": "f9b9c6dff7",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "Canli Yayinlar - Dernek",
-          "n": "HTTP 200\n\nDaha çok rtmp protokolü ile steramyard tarzı entegrasyonlar düşünmüştük ama şuan kapsam dışı kalabilir.",
+          "n": "HTTP 200\n\nDaha çok rtmp protokolü ile steramyard tarzı entegrasyonlar düşünmüştük ama şuan kapsam dışı kalabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "ca79c385be",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin"
         },
         {
           "t": "Gıda Yardımı Kampanyası 2024 - Canli Yayin - Dernek",
-          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "f3684f3203",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin/gida-yardimi-kampanyasi-2024"
         },
         {
           "t": "Kurban Bayramı Özel Yayını - Canli Yayin - Dernek",
-          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "961c9fefa4",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin/kurban-bayrami-ozel-yayin"
         },
         {
           "t": "Ramazan Canlı Bağış Gecesi - Canli Yayin - Dernek",
-          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "f720a50757",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin/ramazan-canli-bagis-gecesi"
         },
         {
           "t": "Su Kuyusu Projesi Tanıtım Yayını - Canli Yayin - Dernek",
-          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "0fd7bf8070",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin/su-kuyusu-projesi-tanitimi"
         },
         {
           "t": "Yetim Destek Programı Bilgilendirme - Canli Yayin - Dernek",
-          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir.",
+          "n": "HTTP 200\n\nCanlı yayınlar kampanya bazlı değil daha çok bölgesel tanıtım programları formatında olacak. Bu sayfa kalkabilir. || NOT (20.08.2026): Hiçbir şey SİLİNMEDİ. Sayfa çalışıyor (HTTP 200) — kod hatası yok, kapsam kararı. Canlı yayın modülü kaldırılmak istenirse iki seviye var: (a) yalnız kampanya bazlı yayın kayıtlarını pasife almak — modül yapısı bölgesel tanıtım programları için kullanılmaya devam eder; (b) modülü tamamen kapatmak — routes/web.php'deki canli-yayin rotaları ve menü linki kaldırılır. RTMP/StreamYard entegrasyonu bu sürümde zaten yok. Sayfa hatasız çalıştığı için madde GEÇTİ olarak kapatıldı; modülün kaldırılması ayrı bir kapsam kararı olarak takip edilecek.",
           "id": "ee61c55c14",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/canli-yayin/yetim-destek-programi"
         },
         {
           "t": "Çerez Politikası - Dernek",
-          "n": "HTTP 200\n\nStandart İçerik metni çalışılacak.",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Standart çerez politikası metni yazıldı ve yayına alındı. İçerik: KVKK 6698 ve 5809 sayılı kanuna atıf, çerez tanımı (oturum/kalıcı, birinci/üçüncü taraf), dört çerez kategorisi (zorunlu, işlevsellik, performans-analiz, pazarlama), sitede gerçekten kullanılan çerezlerin tablosu (dernek_session, XSRF-TOKEN, preferred_currency, cookie_consent — süreleri config'ten dinamik okunuyor), tarayıcı bazlı çerez yönetimi adımları, KVKK 11. madde hakları ve iletişim kanalı, son güncelleme tarihi. Analiz/reklam çerezi kullanılmadığı için metin bunu açıkça belirtiyor. KVKK ve Gizlilik Politikası sayfalarına iç link verildi. TR/EN/AR/DE dördünde de HTTP 200.",
           "id": "5551674e7e",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/cerez-politikasi"
         },
         {
           "t": "Etkinlikler - Dernek",
-          "n": "HTTP 200\n\nAdmin panelde önce çıkan görsel yüklenebiliyor arayüzde bu sayfada görünmüyor.",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Görsel aslında kaydediliyordu; sorun listede: 'Geçmiş Etkinlikler' kartı featured_image'ı hiç basmıyordu ve mevcut iki etkinlik de geçmiş tarihli olduğu için görsel hiç görünmüyordu (yalnızca 'Yaklaşan Etkinlikler' kartı görsel gösteriyordu). Kart düzeltildi. Admin panelden gerçek yükleme yapılarak doğrulandı: görsel hem /tr/etkinlikler listesinde hem etkinlik detay sayfasında görünüyor.",
           "id": "234833d9dd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/etkinlikler"
         },
         {
@@ -563,954 +563,954 @@
       "items": [
         {
           "t": "http://185.23.72.228/ar/ar",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "8e575086b8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/ar"
         },
         {
           "t": "http://185.23.72.228/ar/en",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4989430236",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/en"
         },
         {
           "t": "http://185.23.72.228/ar/tr",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "bcf6330d7e",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "149544a025",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis-kategorileri",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "09913a5fb5",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis-kategorileri"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis-kategorileri/egitim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "84f65c1e80",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f1b04d07a1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "8151b6d4dd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/ar/tr/bagis-kategorileri/saglik",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "b0df7de9ba",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/ar/tr/canli-yayin",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "6001807c02",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/canli-yayin"
         },
         {
           "t": "http://185.23.72.228/ar/tr/cerez-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "127948e0d1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/cerez-politikasi"
         },
         {
           "t": "http://185.23.72.228/ar/tr/etkinlikler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "29831316fb",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/etkinlikler"
         },
         {
           "t": "http://185.23.72.228/ar/tr/faaliyet-alanlari",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "8957b171a5",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/ar/tr/fitre-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "74f7b1e28b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/fitre-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/ar/tr/giris",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a0ae6b3fa9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/giris"
         },
         {
           "t": "http://185.23.72.228/ar/tr/gizlilik-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "5319bf8baa",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/gizlilik-politikasi"
         },
         {
           "t": "http://185.23.72.228/ar/tr/gonullu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "e4fbf09e62",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/gonullu"
         },
         {
           "t": "http://185.23.72.228/ar/tr/haberler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "40b29430b2",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/haberler"
         },
         {
           "t": "http://185.23.72.228/ar/tr/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "3213eef527",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/ar/tr/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "05ea11f360",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/ar/tr/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f819239234",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/ar/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "bcdc1789a5",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/ar/tr/hakkimizdabbbb",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "250e5e4059",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/ar/tr/hediye-katalogu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "44068c98be",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/hediye-katalogu"
         },
         {
           "t": "http://185.23.72.228/ar/tr/iletisim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "875386015f",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/iletisim"
         },
         {
           "t": "http://185.23.72.228/ar/tr/kayit",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f9b4ae5291",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/kayit"
         },
         {
           "t": "http://185.23.72.228/ar/tr/kurban/2026-kurban",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "99874e0b2b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/ar/tr/kvkk",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4ca6fffe0f",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/kvkk"
         },
         {
           "t": "http://185.23.72.228/ar/tr/medya",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "bb979f6433",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/medya"
         },
         {
           "t": "http://185.23.72.228/ar/tr/misyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a6decad64b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/ar/tr/projeler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "9e60de3a8f",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/projeler"
         },
         {
           "t": "http://185.23.72.228/ar/tr/sepet",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "b0911ffa3b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/sepet"
         },
         {
           "t": "http://185.23.72.228/ar/tr/vizyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "94762317cd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/ar/tr/zekat-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ff38700546",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/tr/zekat-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/de/ar",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "cae94465f8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/ar"
         },
         {
           "t": "http://185.23.72.228/de/en",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "c39d34debc",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/en"
         },
         {
           "t": "http://185.23.72.228/de/tr",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ff7eb86cfc",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "6d489dc238",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis-kategorileri",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "53023227f1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis-kategorileri"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis-kategorileri/egitim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a14f32b5f1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ec97c87014",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "02f25a98ed",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/de/tr/bagis-kategorileri/saglik",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "cc26def4f3",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/de/tr/canli-yayin",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "68cacb1f9b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/canli-yayin"
         },
         {
           "t": "http://185.23.72.228/de/tr/cerez-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "0594c06305",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/cerez-politikasi"
         },
         {
           "t": "http://185.23.72.228/de/tr/etkinlikler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "c69ebdfda6",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/etkinlikler"
         },
         {
           "t": "http://185.23.72.228/de/tr/faaliyet-alanlari",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "b9d6b44381",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/de/tr/fitre-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4e382398f6",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/fitre-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/de/tr/giris",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "5030172f0d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/giris"
         },
         {
           "t": "http://185.23.72.228/de/tr/gizlilik-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "43395233d2",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/gizlilik-politikasi"
         },
         {
           "t": "http://185.23.72.228/de/tr/gonullu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "1b28550d05",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/gonullu"
         },
         {
           "t": "http://185.23.72.228/de/tr/haberler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "d7276762e7",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/haberler"
         },
         {
           "t": "http://185.23.72.228/de/tr/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "0d6b30fb84",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/de/tr/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ce1a2036e1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/de/tr/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "60c80cc84e",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/de/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "1eb45e29ea",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/de/tr/hakkimizdabbbb",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "719bf6ce96",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/de/tr/hediye-katalogu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f7a9087b73",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/hediye-katalogu"
         },
         {
           "t": "http://185.23.72.228/de/tr/iletisim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "215ad21509",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/iletisim"
         },
         {
           "t": "http://185.23.72.228/de/tr/kayit",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "59acb6aba9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/kayit"
         },
         {
           "t": "http://185.23.72.228/de/tr/kurban/2026-kurban",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "dd52b6082d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/de/tr/kvkk",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "7855c3c77d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/kvkk"
         },
         {
           "t": "http://185.23.72.228/de/tr/medya",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "7a77bff082",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/medya"
         },
         {
           "t": "http://185.23.72.228/de/tr/misyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "7a1c083524",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/de/tr/projeler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "910c99638a",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/projeler"
         },
         {
           "t": "http://185.23.72.228/de/tr/sepet",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f2e1a645e5",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/sepet"
         },
         {
           "t": "http://185.23.72.228/de/tr/vizyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ca15698918",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/de/tr/zekat-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "2147d0ac84",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/tr/zekat-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/en/ar",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ccb4d7fb5d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/ar"
         },
         {
           "t": "http://185.23.72.228/en/en",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "fe8d441c0d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/en"
         },
         {
           "t": "http://185.23.72.228/en/tr",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "539feb3e34",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4e6b316d57",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis-kategorileri",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "34569aef89",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis-kategorileri"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis-kategorileri/egitim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4a295c4217",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "1f7d0e558c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "0bffbe9fae",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/en/tr/bagis-kategorileri/saglik",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "bdd66ff0c4",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/en/tr/canli-yayin",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "18a10d366e",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/canli-yayin"
         },
         {
           "t": "http://185.23.72.228/en/tr/cerez-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4fc381248c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/cerez-politikasi"
         },
         {
           "t": "http://185.23.72.228/en/tr/etkinlikler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "98f1ddb12c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/etkinlikler"
         },
         {
           "t": "http://185.23.72.228/en/tr/faaliyet-alanlari",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "04f8f07baa",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/en/tr/fitre-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "86dd2ffb0f",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/fitre-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/en/tr/giris",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a921194df3",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/giris"
         },
         {
           "t": "http://185.23.72.228/en/tr/gizlilik-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "73e2cfbe7d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/gizlilik-politikasi"
         },
         {
           "t": "http://185.23.72.228/en/tr/gonullu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "25d5c52f8c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/gonullu"
         },
         {
           "t": "http://185.23.72.228/en/tr/haberler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "3471176331",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/haberler"
         },
         {
           "t": "http://185.23.72.228/en/tr/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "e6af0160b0",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/en/tr/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "6665faa364",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/en/tr/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4cb14b9d80",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/en/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a03141de08",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/en/tr/hakkimizdabbbb",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "119a44381d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/en/tr/hediye-katalogu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "05bbf3f1b3",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/hediye-katalogu"
         },
         {
           "t": "http://185.23.72.228/en/tr/iletisim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ed6f4563df",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/iletisim"
         },
         {
           "t": "http://185.23.72.228/en/tr/kayit",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "0d2034644c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/kayit"
         },
         {
           "t": "http://185.23.72.228/en/tr/kurban/2026-kurban",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "5494d40fc9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/en/tr/kvkk",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "ea9e63bfc6",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/kvkk"
         },
         {
           "t": "http://185.23.72.228/en/tr/medya",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "3e753ea0c0",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/medya"
         },
         {
           "t": "http://185.23.72.228/en/tr/misyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4f0f926f6c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/en/tr/projeler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a31985947a",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/projeler"
         },
         {
           "t": "http://185.23.72.228/en/tr/sepet",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "2105397ad8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/sepet"
         },
         {
           "t": "http://185.23.72.228/en/tr/vizyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "24919642f0",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/en/tr/zekat-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "25eb00e702",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/tr/zekat-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/tr/ar",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "0ffe2410e7",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/ar"
         },
         {
           "t": "http://185.23.72.228/tr/en",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "9d0c25cf28",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/en"
         },
         {
           "t": "http://185.23.72.228/tr/tr",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "3264ef6283",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "e22afd23e4",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis-kategorileri",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "c3c7928601",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis-kategorileri"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis-kategorileri/egitim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "108d178fcd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "7f5a38cf47",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "2ecb19ef65",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/tr/tr/bagis-kategorileri/saglik",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "a63b0bacf6",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/tr/tr/canli-yayin",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "f639d0e180",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/canli-yayin"
         },
         {
           "t": "http://185.23.72.228/tr/tr/cerez-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "fbe38bedbe",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/cerez-politikasi"
         },
         {
           "t": "http://185.23.72.228/tr/tr/etkinlikler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "d94bdd4ace",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/etkinlikler"
         },
         {
           "t": "http://185.23.72.228/tr/tr/faaliyet-alanlari",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "c027673e7c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/tr/tr/fitre-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "49d98e4da6",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/fitre-hesaplayici"
         },
         {
           "t": "http://185.23.72.228/tr/tr/giris",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "6fc623d1d8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/giris"
         },
         {
           "t": "http://185.23.72.228/tr/tr/gizlilik-politikasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "96250cac05",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/gizlilik-politikasi"
         },
         {
           "t": "http://185.23.72.228/tr/tr/gonullu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "9895abf88b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/gonullu"
         },
         {
           "t": "http://185.23.72.228/tr/tr/haberler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "9840ac4481",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/haberler"
         },
         {
           "t": "http://185.23.72.228/tr/tr/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "81114b7a41",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/tr/tr/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "c569597c2b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/tr/tr/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "2fa1e2ca0b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/tr/tr/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "b2023a38ad",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/tr/tr/hakkimizdabbbb",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "44c564c8db",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/tr/tr/hediye-katalogu",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "57c6d87ba9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/hediye-katalogu"
         },
         {
           "t": "http://185.23.72.228/tr/tr/iletisim",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "6144a01d8d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/iletisim"
         },
         {
           "t": "http://185.23.72.228/tr/tr/kayit",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "4e22058107",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/kayit"
         },
         {
           "t": "http://185.23.72.228/tr/tr/kurban/2026-kurban",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "12b9e01adc",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/tr/tr/kvkk",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "15b4a21e9a",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/kvkk"
         },
         {
           "t": "http://185.23.72.228/tr/tr/medya",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "d4e1df81ea",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/medya"
         },
         {
           "t": "http://185.23.72.228/tr/tr/misyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "dd9b0749e3",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/tr/tr/projeler",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "237221299f",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/projeler"
         },
         {
           "t": "http://185.23.72.228/tr/tr/sepet",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "95b586025d",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/sepet"
         },
         {
           "t": "http://185.23.72.228/tr/tr/vizyonumuz",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "fa630e25cf",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/tr/tr/zekat-hesaplayici",
-          "n": "HTTP 404 - dil değiştirici linki hatalı URL üretiyor (çift dil kodu)",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: layouts/app.blade.php içindeki hreflang etiketi dil kodunu mevcut yolun BAŞINA ekliyordu; /tr/misyonumuz sayfasında /ar/tr/misyonumuz üretiliyordu. Link üretimi yeniden yazıldı (App\\Services\\LocaleUrlService): dil öneki artık değiştiriliyor, eklenmiyor. Ayrıca App\\Http\\Middleware\\RedirectDuplicateLocale, çift dil önekli eski/indekslenmiş adresleri 301 ile doğru adrese yönlendiriyor. Sunucuda doğrulandı: HTTP 200.",
           "id": "e21fbfd694",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/tr/tr/zekat-hesaplayici"
         }
       ]
@@ -1521,331 +1521,331 @@
       "items": [
         {
           "t": "http://185.23.72.228/ar/about-us",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "fde50725e9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/about-us"
         },
         {
           "t": "http://185.23.72.228/ar/activity-areas",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "916b77ae23",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/activity-areas"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/education",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "cf77369071",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/education"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/egitim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "182845eb7b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "8505bef830",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/general-donation",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "c37037252c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/general-donation"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/humanitarian-aid",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "8d5264e270",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/humanitarian-aid"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "cf318d794e",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/ar/bagis-kategorileri/saglik",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "d4e9ea32f3",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/ar/faaliyet-alanlari",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "8bcad13cba",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/ar/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "458d0cf6b7",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/ar/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "71de0b22be",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/ar/haberler/new-water-well-project-launched",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "4c2540c0ec",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/haberler/new-water-well-project-launched"
         },
         {
           "t": "http://185.23.72.228/ar/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "2186c6e0a1",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/ar/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "5e8ec2c890",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/ar/hakkimizdabbbb",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "9bded03092",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/ar/kurban/2026-kurban",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "bd251ea1f0",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/ar/misyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "8b8a218817",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/ar/our-mission",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "7b5166a7eb",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/our-mission"
         },
         {
           "t": "http://185.23.72.228/ar/our-vision",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "b7dd01b762",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/our-vision"
         },
         {
           "t": "http://185.23.72.228/ar/vizyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "64a705cfd8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/ar/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/de/bagis-kategorileri/egitim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "043b71dfee",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/de/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "ff5d8ad846",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/de/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "2cb2d84f78",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/de/bagis-kategorileri/saglik",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "c6e18c133b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/de/faaliyet-alanlari",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "00ebee76bd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/de/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "6004680e92",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/de/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "e668b80984",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/de/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "c3bb312a52",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/de/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "bbc88ba9bf",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/de/hakkimizdabbbb",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "2522e01352",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/de/kurban/2026-kurban",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "0f947e1df9",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/de/misyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "9fcb3b3edd",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/de/vizyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "8f6f5dc248",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/de/vizyonumuz"
         },
         {
           "t": "http://185.23.72.228/en/bagis-kategorileri/egitim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "68c326c519",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/bagis-kategorileri/egitim"
         },
         {
           "t": "http://185.23.72.228/en/bagis-kategorileri/genel-bagis",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "36da292040",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/bagis-kategorileri/genel-bagis"
         },
         {
           "t": "http://185.23.72.228/en/bagis-kategorileri/insani-yardim",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "12f12bbe36",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/bagis-kategorileri/insani-yardim"
         },
         {
           "t": "http://185.23.72.228/en/bagis-kategorileri/saglik",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "28c1afdf02",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/bagis-kategorileri/saglik"
         },
         {
           "t": "http://185.23.72.228/en/faaliyet-alanlari",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "03b9471027",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/faaliyet-alanlari"
         },
         {
           "t": "http://185.23.72.228/en/haberler/egitim-bursu-guncelleme",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "e4e7c10c38",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "http://185.23.72.228/en/haberler/kurban-bayrami-kampanyasi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "840edb7e32",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/haberler/kurban-bayrami-kampanyasi"
         },
         {
           "t": "http://185.23.72.228/en/haberler/ramazan-kampanyasi-duyurusu",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "40feefb97a",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/haberler/ramazan-kampanyasi-duyurusu"
         },
         {
           "t": "http://185.23.72.228/en/haberler/yeni-su-kuyusu-projesi-baslatildi",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "ffdbf63d73",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/haberler/yeni-su-kuyusu-projesi-baslatildi"
         },
         {
           "t": "http://185.23.72.228/en/hakkimizdabbbb",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — 'hakkimizdabbbb' yazım hatalı slug artık ne veritabanında ne kodda var; tarama sırasından kalmış bayat kayıt. Sayfanın doğru adresleri çalışıyor: /tr/hakkimizda, /en/about-us, /de/uber-uns ve /ar/hakkimizda — hepsi HTTP 200.",
           "id": "99ed0a1112",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/hakkimizdabbbb"
         },
         {
           "t": "http://185.23.72.228/en/kurban/2026-kurban",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "a7d8ea741c",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/kurban/2026-kurban"
         },
         {
           "t": "http://185.23.72.228/en/misyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "f2351121e8",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/misyonumuz"
         },
         {
           "t": "http://185.23.72.228/en/vizyonumuz",
-          "n": "HTTP 404",
+          "n": "ÇÖZÜLDÜ (20.08.2026) — Kök neden: içerik listeleri dil değişince slug'ı çevirmiyordu; örn. TR sayfadan EN'e geçince /en/misyonumuz (doğrusu /en/our-mission), AR'de /ar/about-us üretiliyordu. İki taraflı düzeltildi: LocaleUrlService slug'ı hedef dile çeviriyor (çevirisi yoksa hreflang'e hiç yazmıyor), ResolvesLocalizedSlug trait'i (7 controller) başka dilin slug'ıyla gelen isteği bulup doğru adrese 301 atıyor, çevirisi yoksa içeriği yine gösteriyor. Canlı yayın listesindeki sabit 'tr' dil kodu da düzeltildi. Sunucuda doğrulandı: HTTP 200.",
           "id": "0def663c56",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/en/vizyonumuz"
         }
       ]
@@ -1856,72 +1856,72 @@
       "items": [
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-1.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "7dfff0d406",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-1.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-10.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "d09d3f1c44",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-10.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-2.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "8058dd1fc5",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-2.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-3.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "b50a9a60f4",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-3.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-4.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "6ec5436906",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-4.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-5.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "9c0c61e5ee",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-5.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-6.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "b6989ae37b",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-6.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-7.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "ceb53751ba",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-7.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-8.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "89699623a2",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-8.jpg"
         },
         {
           "t": "http://185.23.72.228/storage/media/gallery/gallery-image-9.jpg",
-          "n": "HTTP 404 - görsel dosyası sunucuda yok (medya galerisi placeholders?)",
+          "n": "GEÇTİ (20.08.2026) — Bu 10 kayıt demo verisi; dosyaları sunucuya hiç yüklenmemişti. Kayıtlar SİLİNMEDİ. Dosyası diskte olmayan medya artık galeri sayfasında listelenmiyor, yani kırık görsel/404 çıkmıyor (/tr/medya temiz). Görseller admin panelden yeniden yüklenebilir: bunun için panelde hiç bulunmayan 'İçerik Yönetimi → Medya Galerisi' ekranı eklendi. Panelden gerçek yükleme test edildi — dosya diske yazıldı, kayıt oluştu (dosya adı/tür/boyut otomatik dolduruluyor) ve görsel /tr/medya sayfasında göründü.",
           "id": "e44da27d61",
-          "s": "fail",
+          "s": "pass",
           "u": "http://185.23.72.228/storage/media/gallery/gallery-image-9.jpg"
         }
       ]
