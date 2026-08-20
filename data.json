@@ -558,6 +558,11 @@
       ]
     },
     {
+      "name": "@de - Sayfalar",
+      "id": "pages-de",
+      "items": []
+    },
+    {
       "name": "Kırık Linkler - Dil Değiştirici (404)",
       "id": "broken-locale",
       "items": [
