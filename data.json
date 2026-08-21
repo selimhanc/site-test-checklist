@@ -173,35 +173,35 @@
         },
         {
           "t": "Gizlilik Politikası - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nİçerik taskı - Hazırda varsa Standart bir gizlilik politikası eklenebilir. Yoksa biz çalışabiliriz.",
           "id": "6b4c4ad7d3",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/gizlilik-politikasi"
         },
         {
           "t": "Gönüllü Ol - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "41c645a3c8",
           "s": "pass",
           "u": "http://185.23.72.228/tr/gonullu"
         },
         {
           "t": "Haberler ve Duyurular - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "c1d207fa88",
           "s": "pass",
           "u": "http://185.23.72.228/tr/haberler"
         },
         {
           "t": "Eğitim Bursu Programı Güncelleme",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "e4b6269f4b",
           "s": "pass",
           "u": "http://185.23.72.228/tr/haberler/egitim-bursu-guncelleme"
         },
         {
           "t": "Kurban Bayramı Kampanyası",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "bf995e90d9",
           "s": "pass",
           "u": "http://185.23.72.228/tr/haberler/kurban-bayrami-kampanyasi"
@@ -222,28 +222,28 @@
         },
         {
           "t": "Hakkımızda",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "4a02001a3d",
           "s": "pass",
-          "u": "http://185.23.72.228/tr/hakkimizdabbbb"
+          "u": "http://185.23.72.228/tr/hakkimizda"
         },
         {
           "t": "Hediye Kataloğu - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "3039b32f27",
           "s": "pass",
           "u": "http://185.23.72.228/tr/hediye-katalogu"
         },
         {
           "t": "İletişim - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "7c6c2e7045",
           "s": "pass",
           "u": "http://185.23.72.228/tr/iletisim"
         },
         {
           "t": "Giriş Yap / Üye Ol - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nveri girişleri başarılı",
           "id": "63839d70a9",
           "s": "pass",
           "u": "http://185.23.72.228/tr/kayit"
