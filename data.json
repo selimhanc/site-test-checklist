@@ -257,9 +257,9 @@
         },
         {
           "t": "KVKK Aydınlatma Metni - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nVARSA STANDART BİR KVKK METNİ EKLENEBİLİR.",
           "id": "24310769cf",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/kvkk"
         },
         {
