@@ -152,16 +152,16 @@
         },
         {
           "t": "Faaliyet Alanları",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\n#Faaliyet ve faaliyet ismi (#kurban #sukuyusu vs) etiketlenen haber postlarini burada kategoriler-tablar halinde listelenip filtreleme özelliği gelebilir.",
           "id": "3ddd5de345",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/faaliyet-alanlari"
         },
         {
           "t": "Fitre Hesaplayıcı - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nKişi başı fitre miktarını güncelleme adresini bulamadım. Ayrıca en altta fitre toplamı hesab edince altta o meblağda fitre bağışı yap butonu ile bağışa bağlanabilir. Ama bu özellik aç kapa yapılabilir olsa iyi olur.",
           "id": "161d9a036f",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/fitre-hesaplayici"
         },
         {
