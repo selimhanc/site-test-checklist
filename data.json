@@ -264,7 +264,7 @@
         },
         {
           "t": "Medya Galerisi - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nmedya yükleme görüntüleme ve kategorilendirme başarılı",
           "id": "eaa859e33c",
           "s": "pass",
           "u": "http://185.23.72.228/tr/medya"
