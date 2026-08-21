@@ -166,9 +166,9 @@
         },
         {
           "t": "Giriş Yap / Üye Ol - Dernek",
-          "n": "HTTP 200",
+          "n": "HTTP 200\n\nKayıt yaparken hata alınca kayıt sayfasına değilde giriş sayfasına atıyor ",
           "id": "274e332ed1",
-          "s": "pass",
+          "s": "pending",
           "u": "http://185.23.72.228/tr/giris"
         },
         {
