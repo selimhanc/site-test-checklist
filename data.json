@@ -250,7 +250,7 @@
         },
         {
           "t": "2026 Kurban - Dernek",
-          "n": "HTTP 200\n\nbu sayfayı panelden kurban-bayrami olarak değiştirebiliriz.\n\nhayvan türleri bilgileri görselleri fiyatlar güncellenebiliyor.\n\nSADECE BÖLGE SEÇİM AŞAMASINDA 1. BÖLGENİN ALTINDA FİYAT YAZARKEN DİĞER BÖLGELERİN ALTINDA YAZMIYOR.",
+          "n": "HTTP 200\n\nbu sayfayı panelden kurban-bayrami olarak değiştirebiliriz.\n\nhayvan türleri bilgileri görselleri fiyatlar güncellenebiliyor.\n\nSADECE BÖLGE SEÇİM AŞAMASINDA FİYAT KOMBİNASYONLARI EKLENDİ EĞER BİR ÜLKEDEKİ BİR KURBAN TÜRÜNDE FİYAT YOKSA O ÜLKEDE O KURBAN GÖRÜNMESİN.\n\nMESELA DEVE SADECE AFGANİSTANDA GÖRÜNSÜN ",
           "id": "df6f89a534",
           "s": "pending",
           "u": "http://185.23.72.228/tr/kurban/2026-kurban"
