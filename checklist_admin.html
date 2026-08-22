@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Test Checklist</title>
+<style>
+:root {
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --primary: #024372;
+  --primary-hover: #03365c;
+  --accent: #ef950e;
+  --pass: #16a34a;
+  --fail: #dc2626;
+  --pending: #d97706;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+.topbar { position: sticky; top: 0; z-index: 10; background: var(--primary); color: #fff; padding: 14px 20px; box-shadow: 0 2px 10px rgba(0,0,0,.15); }
+.topbar .row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+.topbar h1 { font-size: 18px; font-weight: 700; letter-spacing: -.02em; }
+.topbar .sub { font-size: 12px; opacity: .75; }
+.progress-wrap { flex: 1; min-width: 200px; }
+.progress-bar { height: 8px; background: rgba(255,255,255,.25); border-radius: 99px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); width: 0; transition: width .3s; }
+.progress-label { font-size: 12px; opacity: .9; margin-top: 4px; }
+.btn { border: none; cursor: pointer; font: inherit; font-weight: 600; border-radius: 8px; padding: 8px 14px; transition: opacity .15s; }
+.btn:hover { opacity: .85; }
+.btn-light { background: rgba(255,255,255,.15); color: #fff; }
+.btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-danger { background: #fef2f2; color: var(--fail); border: 1px solid #fecaca; }
+.container { max-width: 1100px; margin: 20px auto; padding: 0 16px; display: flex; flex-direction: column; gap: 14px; }
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.toolbar input[type=search] { flex: 1; min-width: 200px; padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: var(--card); }
+.toolbar .spacer { flex: 1; }
+.cat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.cat-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px; cursor: pointer; user-select: none; flex-wrap: nowrap; }
+.cat-head:hover { background: #f8fafc; }
+.cat-head .caret { transition: transform .2s; color: var(--muted); font-size: 12px; flex-shrink: 0; }
+.cat-head.collapsed .caret { transform: rotate(-90deg); }
+.cat-name { font-weight: 700; font-size: 15px; flex: 1; min-width: 0; border: none; background: transparent; font: inherit; padding: 4px; border-radius: 6px; }
+.cat-name:focus { outline: 2px solid var(--accent); background: #fffdf6; }
+.cat-count { font-size: 12px; color: var(--muted); background: var(--bg); border-radius: 99px; padding: 3px 10px; flex-shrink: 0; white-space: nowrap; }
+.cat-body { border-top: 1px solid var(--border); padding: 8px; }
+.cat-body.hidden { display: none; }
+.item { display: flex; gap: 10px; padding: 10px; border-radius: 10px; border: 1px solid transparent; }
+.item:hover { background: #f8fafc; border-color: var(--border); }
+.item .main { flex: 1; min-width: 0; }
+.item .text-row { display: flex; align-items: flex-start; gap: 8px; flex-wrap: nowrap; }
+.item .chk { margin-top: 3px; width: 18px; height: 18px; cursor: pointer; accent-color: var(--pass); flex-shrink: 0; }
+.item .label { font-size: 14px; line-height: 1.45; word-break: break-word; flex: 1; min-width: 0; }
+.item .label.s-fail { text-decoration: line-through; opacity: .75; }
+.item .label.editing { flex: initial; width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font: inherit; }
+.item .meta { display: flex; gap: 8px; align-items: center; margin-top: 6px; flex-wrap: wrap; }
+.item .url { font-size: 12px; color: var(--muted); text-decoration: none; }
+.item .url:hover { color: var(--primary); text-decoration: underline; }
+.item .url-input { flex: 1; min-width: 120px; font-size: 12px; font-family: ui-monospace, monospace; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; }
+.item .url-input:focus { outline: 2px solid var(--accent); }
+.item .note { width: 100%; margin-top: 6px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: 13px; resize: vertical; min-height: 34px; }
+.item .note:focus { outline: 2px solid var(--accent); }
+select.status { font: inherit; font-size: 13px; font-weight: 600; border-radius: 8px; border: 1px solid var(--border); padding: 5px 8px; cursor: pointer; background: var(--card); }
+select.status.s-pass { background: #f0fdf4; color: var(--pass); border-color: #bbf7d0; }
+select.status.s-fail { background: #fef2f2; color: var(--fail); border-color: #fecaca; }
+select.status.s-pending { background: #fffbeb; color: var(--pending); border-color: #fde68a; }
+.icon-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 15px; padding: 4px 6px; border-radius: 6px; line-height: 1; flex-shrink: 0; }
+.icon-btn:hover { background: #eef2f7; color: var(--text); }
+.icon-btn.danger:hover { background: #fef2f2; color: var(--fail); }
+.add-item { margin: 8px 6px; width: calc(100% - 12px); padding: 10px; border: 2px dashed var(--border); border-radius: 10px; background: transparent; color: var(--muted); font: inherit; cursor: pointer; }
+.add-item:hover { border-color: var(--accent); color: var(--primary); }
+.add-cat { padding: 14px; border: 2px dashed var(--border); border-radius: 12px; background: transparent; color: var(--muted); font: inherit; font-weight: 600; cursor: pointer; }
+.add-cat:hover { border-color: var(--accent); color: var(--primary); }
+.empty { text-align: center; color: var(--muted); padding: 30px 10px; font-size: 14px; }
+footer { text-align: center; color: var(--muted); font-size: 12px; padding: 20px; }
+footer .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; border-radius: 8px; padding: 8px 12px; display: inline-block; }
+.sync-status { font-size: 12px; color: var(--muted); padding: 2px 2px; min-height: 16px; }
+.sync-status.ok { color: var(--pass); }
+.sync-status.err { color: var(--fail); }
+.hidden { display: none !important; }
+@media (max-width: 640px) {
+  .topbar .row { flex-direction: column; align-items: flex-start; }
+  .progress-wrap { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="row">
+    <div>
+      <h1>Site Test Checklist</h1>
+      <div class="sub">185.23.72.228 — otomatik kayıt (tarayıcı hafızası)</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+      <div class="progress-label" id="progLabel">Yükleniyor…</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Öğe / kategori ara…">
+    <button class="btn btn-outline" id="btnCollapse">Tümünü Kapat</button>
+    <span class="spacer"></span>
+    <button class="btn btn-outline" id="btnExport">JSON Dışa Aktar</button>
+    <button class="btn btn-outline" id="btnImport">JSON İçe Aktar</button>
+    <button class="btn btn-outline" id="btnSyncLoad">GitHub'dan Yükle</button>
+    <button class="btn btn-primary" id="btnSyncSave">GitHub'a Kaydet</button>
+    <button class="btn btn-outline" id="btnReset">Varsayılana Dön</button>
+  </div>
+  <div id="syncStatus" class="sync-status">Yükleniyor…</div>
+  <div id="cats"></div>
+  <button class="add-cat" id="btnAddCat">+ Kategori Ekle</button>
+  <footer>
+    <div class="hint">Değişiklikler tarayıcıda otomatik kaydedilir. Kalıcı yedek için <b>GitHub'a Kaydet</b> ile repo'ya commit atılır; <b>GitHub'dan Yükle</b> son kaydı getirir. Token yalnızca senin tarayıcında saklanır.</div>
+  </footer>
+</div>
+
+<input type="file" id="fileInput" accept="application/json,.json" class="hidden">
+
+<script>
+/* ======= Varsayılan veri (crawl sonuçlarıyla önceden doldurulur) ======= */
+const DEFAULT_DATA = {"generated": "2026-08-22 08:49", "base": "http://185.23.72.228/admin", "categories": [{"id": "admin-pages", "name": "Admin Panel - Sayfalar", "items": [{"id": "e49b6d4e3e", "t": "İşlem Logları - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs", "s": "pass", "n": "HTTP 200"}, {"id": "5902fcf448", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/100", "s": "pass", "n": "HTTP 200"}, {"id": "2efc66ed93", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/101", "s": "pass", "n": "HTTP 200"}, {"id": "054ffb1423", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/102", "s": "pass", "n": "HTTP 200"}, {"id": "2f174708d7", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/103", "s": "pass", "n": "HTTP 200"}, {"id": "2e71e22bc5", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/79", "s": "pass", "n": "HTTP 200"}, {"id": "c855a3f42d", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/80", "s": "pass", "n": "HTTP 200"}, {"id": "5422a9f40b", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/81", "s": "pass", "n": "HTTP 200"}, {"id": "746cdddff8", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/82", "s": "pass", "n": "HTTP 200"}, {"id": "c20eaf0dcf", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/83", "s": "pass", "n": "HTTP 200"}, {"id": "03bbb868d0", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/84", "s": "pass", "n": "HTTP 200"}, {"id": "08ead873cd", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/85", "s": "pass", "n": "HTTP 200"}, {"id": "eff71ba20b", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/86", "s": "pass", "n": "HTTP 200"}, {"id": "5e844da1b7", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/87", "s": "pass", "n": "HTTP 200"}, {"id": "0d21bdce99", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/88", "s": "pass", "n": "HTTP 200"}, {"id": "da1e6dc31f", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/89", "s": "pass", "n": "HTTP 200"}, {"id": "957df7a964", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/90", "s": "pass", "n": "HTTP 200"}, {"id": "b614a357ed", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/91", "s": "pass", "n": "HTTP 200"}, {"id": "0a871426f8", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/92", "s": "pass", "n": "HTTP 200"}, {"id": "f9fa416a5b", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/93", "s": "pass", "n": "HTTP 200"}, {"id": "4bb91bb08f", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/94", "s": "pass", "n": "HTTP 200"}, {"id": "ac9202a64e", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/95", "s": "pass", "n": "HTTP 200"}, {"id": "4c0f6f00bd", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/96", "s": "pass", "n": "HTTP 200"}, {"id": "e64ad7da8e", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/97", "s": "pass", "n": "HTTP 200"}, {"id": "3ed9acd3e8", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/98", "s": "pass", "n": "HTTP 200"}, {"id": "87e9022ba6", "t": "İşlem Logu görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/activity-logs/99", "s": "pass", "n": "HTTP 200"}, {"id": "4f5effcdd4", "t": "Sistem Ayarları - Dernek Yönetim", "u": "http://185.23.72.228/admin/ayarlar", "s": "pass", "n": "HTTP 200"}, {"id": "243a74b17d", "t": "Hesaplayıcılar - Dernek Yönetim", "u": "http://185.23.72.228/admin/calculator-configs", "s": "pass", "n": "HTTP 200"}, {"id": "3ebbd54384", "t": "Hesaplayıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/calculator-configs/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "88e0a4107f", "t": "Hesaplayıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/calculator-configs/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "ca6f2adbfc", "t": "Hesaplayıcı oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/calculator-configs/create", "s": "pass", "n": "HTTP 200"}, {"id": "50bf06ed21", "t": "Sertifika Şablonları - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates", "s": "pass", "n": "HTTP 200"}, {"id": "86fe2055f9", "t": "Şablon Tasarla: Varsayılan Bağış Sertifikası - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates/1/design", "s": "pass", "n": "HTTP 200"}, {"id": "56902b7521", "t": "Sertifika Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "85a02b1320", "t": "Şablon Tasarla: Onurlandırma E-Kartı - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates/2/design", "s": "pass", "n": "HTTP 200"}, {"id": "ae0332ffea", "t": "Sertifika Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "58078999da", "t": "Sertifika Şablonu oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/certificate-templates/create", "s": "pass", "n": "HTTP 200"}, {"id": "609f90208c", "t": "İletişim Mesajları - Dernek Yönetim", "u": "http://185.23.72.228/admin/contact-messages", "s": "pass", "n": "HTTP 200"}, {"id": "8123cad385", "t": "İletişim Mesajı görüntüle - Dernek Yönetim", "u": "http://185.23.72.228/admin/contact-messages/1", "s": "pass", "n": "HTTP 200"}, {"id": "99ad81ff1f", "t": "Dashboard - Dernek Yönetim", "u": "http://185.23.72.228/admin/dashboard", "s": "pass", "n": "HTTP 200"}, {"id": "f2dd170575", "t": "Bağış Kategorileri - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories", "s": "pass", "n": "HTTP 200"}, {"id": "c960ab4513", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "78f3eaf62a", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "d4f4306062", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "6ebd8bc91b", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "85a23cf5e5", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/6/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3be13003b0", "t": "Bağış Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/7/edit", "s": "pass", "n": "HTTP 200"}, {"id": "609bd2740a", "t": "Bağış Kategorisi oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/donation-categories/create", "s": "pass", "n": "HTTP 200"}, {"id": "e4fab91c6e", "t": "Bağışlar - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations", "s": "pass", "n": "HTTP 200"}, {"id": "1085da1ff0", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/34/edit", "s": "pass", "n": "HTTP 200"}, {"id": "7e4f9223c7", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/35/edit", "s": "pass", "n": "HTTP 200"}, {"id": "fc805722e0", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/42/edit", "s": "pass", "n": "HTTP 200"}, {"id": "9ba3c7e710", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/44/edit", "s": "pass", "n": "HTTP 200"}, {"id": "e635b633cc", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/58/edit", "s": "pass", "n": "HTTP 200"}, {"id": "db3247f8f4", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/59/edit", "s": "pass", "n": "HTTP 200"}, {"id": "7fb9453b2a", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/60/edit", "s": "pass", "n": "HTTP 200"}, {"id": "25dd501c3f", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/61/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3c5f1b060e", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/62/edit", "s": "pass", "n": "HTTP 200"}, {"id": "a3565cd1b6", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/63/edit", "s": "pass", "n": "HTTP 200"}, {"id": "f054fcc11b", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/64/edit", "s": "pass", "n": "HTTP 200"}, {"id": "d88c556f88", "t": "Bağış düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/donations/65/edit", "s": "pass", "n": "HTTP 200"}, {"id": "edbe1954d2", "t": "Etkinlikler - Dernek Yönetim", "u": "http://185.23.72.228/admin/events", "s": "pass", "n": "HTTP 200"}, {"id": "e5c438804f", "t": "Etkinlik düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/events/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "612eeae70b", "t": "Etkinlik düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/events/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4614968578", "t": "Etkinlik oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/events/create", "s": "pass", "n": "HTTP 200"}, {"id": "7d52c1e5be", "t": "Senkronizasyon Logları - Dernek Yönetim", "u": "http://185.23.72.228/admin/external-sync-logs", "s": "pass", "n": "HTTP 200"}, {"id": "cc8013d24d", "t": "Hediye Kataloğu - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items", "s": "pass", "n": "HTTP 200"}, {"id": "1be38682ca", "t": "Hediye Kataloğu Öğesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4491a669a2", "t": "Hediye Kataloğu Öğesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "b78a99a492", "t": "Hediye Kataloğu Öğesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "c7d0f76e20", "t": "Hediye Kataloğu Öğesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "eac34960d2", "t": "Hediye Kataloğu Öğesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "17d867ccbd", "t": "Hediye Kataloğu Öğesi oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/gift-catalog-items/create", "s": "pass", "n": "HTTP 200"}, {"id": "10d2225e0a", "t": "Kurban Hizmetleri - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-campaigns", "s": "pass", "n": "HTTP 200"}, {"id": "b1739f0cba", "t": "Kurban Hizmeti düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-campaigns/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "b7285b193d", "t": "Kurban Hizmeti oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-campaigns/create", "s": "pass", "n": "HTTP 200"}, {"id": "c9c16b9148", "t": "Kurban Kesim - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-orders", "s": "pass", "n": "HTTP 200"}, {"id": "2f90de3e33", "t": "Kurban Kesim düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-orders/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "60ba93438d", "t": "Kurban Kesim düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-orders/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "449c6e3a13", "t": "Kurban Kesim düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-orders/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "7e07520bd7", "t": "Kurban Kesim düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/kurban-orders/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3a63bc7a3f", "t": "Diller - Dernek Yönetim", "u": "http://185.23.72.228/admin/languages", "s": "pass", "n": "HTTP 200"}, {"id": "d34ccfaf86", "t": "Canlı Yayınlar - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams", "s": "pass", "n": "HTTP 200"}, {"id": "250d2f3086", "t": "Canlı Yayın düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4887eebb78", "t": "Canlı Yayın düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "dc19c15b47", "t": "Canlı Yayın düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "6df15c7524", "t": "Canlı Yayın düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "a5ee4ebc1d", "t": "Canlı Yayın düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "f5e4c14f63", "t": "Canlı Yayın oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/live-streams/create", "s": "pass", "n": "HTTP 200"}, {"id": "8986bca25b", "t": "Çeviri Yönetimi - Dernek Yönetim", "u": "http://185.23.72.228/admin/manage-translations", "s": "pass", "n": "HTTP 200"}, {"id": "a3e35a72c0", "t": "Medya Galerisi - Dernek Yönetim", "u": "http://185.23.72.228/admin/media", "s": "pass", "n": "HTTP 200"}, {"id": "35d797a5ef", "t": "Medya düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/media/11/edit", "s": "pass", "n": "HTTP 200"}, {"id": "8f9104d16d", "t": "Medya oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/media/create", "s": "pass", "n": "HTTP 200"}, {"id": "8be19b63ef", "t": "Bülten Aboneleri - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers", "s": "pass", "n": "HTTP 200"}, {"id": "a97f75e4b9", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4f04854adf", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "336f0526f7", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "574d954f00", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "8246158c99", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "264c000f46", "t": "Bülten Abonesi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/6/edit", "s": "pass", "n": "HTTP 200"}, {"id": "730bb1964e", "t": "Bülten Abonesi oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/newsletter-subscribers/create", "s": "pass", "n": "HTTP 200"}, {"id": "6f9c227f70", "t": "Bildirim Şablonları - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates", "s": "pass", "n": "HTTP 200"}, {"id": "bdf3e64dfc", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "755ca723bb", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "78dca9e6a0", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "fe65d12f42", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "60e381b4a5", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "f617f6107e", "t": "Bildirim Şablonu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/6/edit", "s": "pass", "n": "HTTP 200"}, {"id": "a6837006e1", "t": "Bildirim Şablonu oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/notification-templates/create", "s": "pass", "n": "HTTP 200"}, {"id": "a2b2e5c603", "t": "Sayfalar - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages", "s": "pass", "n": "HTTP 200"}, {"id": "30e8c5ecb2", "t": "Sayfa düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "1fc81e549c", "t": "Sayfa düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "70e28b96a9", "t": "Sayfa düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "ce151993be", "t": "Sayfa düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "8cd585700b", "t": "Sayfa oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/pages/create", "s": "pass", "n": "HTTP 200"}, {"id": "3c5bf3b839", "t": "Ödemeler - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments", "s": "pass", "n": "HTTP 200"}, {"id": "4553b7a48e", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/37/edit", "s": "pass", "n": "HTTP 200"}, {"id": "e67fd25ecc", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/38/edit", "s": "pass", "n": "HTTP 200"}, {"id": "cee5dc4a1c", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/39/edit", "s": "pass", "n": "HTTP 200"}, {"id": "2c362ad715", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/41/edit", "s": "pass", "n": "HTTP 200"}, {"id": "1902410c7b", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/53/edit", "s": "pass", "n": "HTTP 200"}, {"id": "f1d1b23594", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/54/edit", "s": "pass", "n": "HTTP 200"}, {"id": "f039fc2ab9", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/55/edit", "s": "pass", "n": "HTTP 200"}, {"id": "5892b96b4f", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/56/edit", "s": "pass", "n": "HTTP 200"}, {"id": "142f73f755", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/57/edit", "s": "pass", "n": "HTTP 200"}, {"id": "75c318a5a5", "t": "Ödeme düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/payments/58/edit", "s": "pass", "n": "HTTP 200"}, {"id": "31570e69a7", "t": "Haberler - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts", "s": "pass", "n": "HTTP 200"}, {"id": "07529c9812", "t": "Haber düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "11cd4d5ae9", "t": "Haber düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4949b30e75", "t": "Haber düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "61cabb4123", "t": "Haber düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "9c0aef7017", "t": "Haber düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "0bd0c071b6", "t": "Haber oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/posts/create", "s": "pass", "n": "HTTP 200"}, {"id": "07baff492a", "t": "Projeler - Dernek Yönetim", "u": "http://185.23.72.228/admin/projects", "s": "pass", "n": "HTTP 200"}, {"id": "3741bf93a1", "t": "Proje düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/projects/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "6cd041983a", "t": "Proje düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/projects/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "9626cafb26", "t": "Proje düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/projects/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "57bc6d6144", "t": "Proje oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/projects/create", "s": "pass", "n": "HTTP 200"}, {"id": "fd5bac3282", "t": "Raporlama - Dernek Yönetim", "u": "http://185.23.72.228/admin/raporlama", "s": "pass", "n": "HTTP 200"}, {"id": "ca7a51fd2a", "t": "Slider - Dernek Yönetim", "u": "http://185.23.72.228/admin/sliders", "s": "pass", "n": "HTTP 200"}, {"id": "dbb7a7a845", "t": "Slayt düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/sliders/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "0b474a0546", "t": "Slayt düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/sliders/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "c0c1768542", "t": "Slayt düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/sliders/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "101028f07a", "t": "Slayt oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/sliders/create", "s": "pass", "n": "HTTP 200"}, {"id": "3ff1280ab8", "t": "SMS Kampanyaları - Dernek Yönetim", "u": "http://185.23.72.228/admin/sms-campaigns", "s": "pass", "n": "HTTP 200"}, {"id": "2931a6577d", "t": "SMS Kampanya oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/sms-campaigns/create", "s": "pass", "n": "HTTP 200"}, {"id": "7f17af943a", "t": "SMS Grupları - Dernek Yönetim", "u": "http://185.23.72.228/admin/sms-groups", "s": "pass", "n": "HTTP 200"}, {"id": "85d2431f4a", "t": "SMS Raporları - Dernek Yönetim", "u": "http://185.23.72.228/admin/sms-reports", "s": "pass", "n": "HTTP 200"}, {"id": "089cf93b67", "t": "Teknik Dokümantasyon - Dernek Yönetim", "u": "http://185.23.72.228/admin/technical-docs", "s": "pass", "n": "HTTP 200"}, {"id": "4d776d7179", "t": "Temalar - Dernek Yönetim", "u": "http://185.23.72.228/admin/themes", "s": "pass", "n": "HTTP 200"}, {"id": "5e1d7b4442", "t": "Kullanıcılar - Dernek Yönetim", "u": "http://185.23.72.228/admin/users", "s": "pass", "n": "HTTP 200"}, {"id": "3f0b0bab9e", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/10/edit", "s": "pass", "n": "HTTP 200"}, {"id": "174e3fde70", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/11/edit", "s": "pass", "n": "HTTP 200"}, {"id": "a2c2a21886", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/12/edit", "s": "pass", "n": "HTTP 200"}, {"id": "feced20eaf", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "4e44931285", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3e4a060c7d", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "6a0c8ecf2c", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/6/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3022b66d78", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/7/edit", "s": "pass", "n": "HTTP 200"}, {"id": "c606eb3ce3", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/8/edit", "s": "pass", "n": "HTTP 200"}, {"id": "6923fb4d06", "t": "Kullanıcı düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/9/edit", "s": "pass", "n": "HTTP 200"}, {"id": "eddf379e05", "t": "Kullanıcı oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/users/create", "s": "pass", "n": "HTTP 200"}, {"id": "e0337b2e4b", "t": "Gönüllü Başvuruları - Dernek Yönetim", "u": "http://185.23.72.228/admin/volunteers", "s": "pass", "n": "HTTP 200"}, {"id": "959771c33d", "t": "Gönüllü Başvurusu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/volunteers/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3a259cfca4", "t": "Gönüllü Başvurusu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/volunteers/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "26f9f5cf3e", "t": "Gönüllü Başvurusu düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/volunteers/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "80a8d14d17", "t": "Gönüllü Başvurusu oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/volunteers/create", "s": "pass", "n": "HTTP 200"}, {"id": "e6d627c234", "t": "Zekat Kategorileri - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories", "s": "pass", "n": "HTTP 200"}, {"id": "0500dea9e7", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/1/edit", "s": "pass", "n": "HTTP 200"}, {"id": "3a45ca20a9", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/2/edit", "s": "pass", "n": "HTTP 200"}, {"id": "1d8fbf583d", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/3/edit", "s": "pass", "n": "HTTP 200"}, {"id": "d415c18538", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/4/edit", "s": "pass", "n": "HTTP 200"}, {"id": "aa20290d67", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/5/edit", "s": "pass", "n": "HTTP 200"}, {"id": "d8946687ee", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/6/edit", "s": "pass", "n": "HTTP 200"}, {"id": "fc19375b0f", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/7/edit", "s": "pass", "n": "HTTP 200"}, {"id": "e268bffcbe", "t": "Zekat Kategorisi düzenle - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/8/edit", "s": "pass", "n": "HTTP 200"}, {"id": "59b08644fe", "t": "Zekat Kategorisi oluştur - Dernek Yönetim", "u": "http://185.23.72.228/admin/zekat-categories/create", "s": "pass", "n": "HTTP 200"}]}]};
+
+const LS_KEY = 'site-checklist-v1';
+let data = load();
+
+function load() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (raw) {
+      const d = JSON.parse(raw);
+      if (d && Array.isArray(d.categories)) return d;
+    }
+  } catch(e) { console.warn('localStorage okunamadı', e); }
+  return structuredClone(DEFAULT_DATA);
+}
+
+function save() {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(data)); }
+  catch(e) { console.warn('kaydedilemedi', e); }
+}
+
+function uid() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+}
+
+const state = { collapsed: {}, search: '', editingId: null };
+
+/* ======= Render ======= */
+const catsEl = document.getElementById('cats');
+const progFill = document.getElementById('progFill');
+const progLabel = document.getElementById('progLabel');
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function statusLabel(s) {
+  return { pass:'Geçti', fail:'Kaldı', pending:'Bekliyor' }[s] || 'Bekliyor';
+}
+
+function statusClass(s) {
+  return { pass:'s-pass', fail:'s-fail', pending:'s-pending' }[s] || 's-pending';
+}
+
+function render() {
+  const q = state.search.trim().toLowerCase();
+  const total = data.categories.reduce((a,c) => a + c.items.length, 0);
+  const done = data.categories.reduce((a,c) => a + c.items.filter(i => i.s === 'pass' || i.s === 'fail').length, 0);
+  const pct = total ? Math.round(done/total*100) : 0;
+  progFill.style.width = pct + '%';
+  progLabel.textContent = `${done} / ${total} sonuçlandı (${pct}%) · ${total-done} bekliyor`;
+
+  catsEl.innerHTML = '';
+
+  if (!data.categories.length) {
+    catsEl.innerHTML = '<div class="empty">Henüz kategori yok. "+ Kategori Ekle" ile başlayın.</div>';
+    return;
+  }
+
+  data.categories.forEach((cat, ci) => {
+    let items = cat.items;
+    if (q) {
+      items = items.filter(i => (i.t||'').toLowerCase().includes(q) || (i.n||'').toLowerCase().includes(q) || (i.u||'').toLowerCase().includes(q) || cat.name.toLowerCase().includes(q));
+    }
+    const doneInCat = cat.items.filter(i => i.s === 'pass' || i.s === 'fail').length;
+    const isCollapsed = state.collapsed[cat.id] !== false;
+
+    const head = document.createElement('div');
+    head.className = 'cat-head' + (isCollapsed ? ' collapsed' : '');
+    head.innerHTML = `
+      <span class="caret">▼</span>
+      <input class="cat-name" value="${esc(cat.name)}" title="Kategori adını düzenle">
+      <span class="cat-count">${doneInCat}/${cat.items.length}</span>
+      <button class="icon-btn danger" title="Kategoriyi sil">✕</button>`;
+    head.querySelector('.caret').addEventListener('click', e => { e.stopPropagation(); toggleCat(cat.id); });
+    head.querySelector('.cat-name').addEventListener('input', e => { cat.name = e.target.value; save(); });
+    head.querySelector('.cat-name').addEventListener('click', e => e.stopPropagation());
+    head.querySelector('.icon-btn').addEventListener('click', e => { e.stopPropagation(); if (confirm(`"${cat.name}" kategorisini sil?`)) { removeCat(cat.id); } });
+    head.addEventListener('click', () => toggleCat(cat.id));
+
+    const body = document.createElement('div');
+    body.className = 'cat-body' + (isCollapsed ? ' hidden' : '');
+
+    if (!items.length) {
+      body.innerHTML = `<div class="empty">${q ? 'Arama sonucu yok' : 'Öğe yok'}</div>`;
+    }
+    items.forEach(item => {
+      body.appendChild(renderItem(item, cat));
+    });
+
+    const addBtn = document.createElement('button');
+    addBtn.className = 'add-item';
+    addBtn.textContent = '+ Öğe Ekle';
+    addBtn.addEventListener('click', () => { cat.items.push({ id: uid(), t: '', u: '', s: 'pending', n: '' }); state.editingId = cat.items[cat.items.length-1].id; save(); render(); });
+    body.appendChild(addBtn);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'cat';
+    wrap.appendChild(head);
+    wrap.appendChild(body);
+    catsEl.appendChild(wrap);
+  });
+  document.getElementById('btnCollapse').textContent = data.categories.every(c => state.collapsed[c.id] !== false) ? 'Tümünü Aç' : 'Tümünü Kapat';
+}
+
+function renderItem(item, cat) {
+  const div = document.createElement('div');
+  div.className = 'item';
+  const editing = state.editingId === item.id;
+  div.innerHTML = `
+    <div class="main">
+      <div class="text-row">
+        <input type="checkbox" class="chk" ${item.s === 'pass' ? 'checked' : ''} title="Geçti olarak işaretle">
+        ${editing
+          ? `<input class="label editing" value="${esc(item.t)}" placeholder="Kontrol adı / sayfa başlığı">
+             <button class="icon-btn" title="Kaydet">✔</button>`
+          : `<div class="label ${item.s === 'fail' ? 's-fail' : ''}" ${item.t ? '' : 'style="color:var(--muted)"'}>${esc(item.t || '(başlık yok)')}</div>
+             <button class="icon-btn" title="Düzenle">✎</button>`}
+        <button class="icon-btn danger" title="Öğeyi sil">✕</button>
+      </div>
+      <div class="meta">
+        <select class="status ${statusClass(item.s)}">
+          <option value="pending" ${item.s==='pending'?'selected':''}>Bekliyor</option>
+          <option value="pass" ${item.s==='pass'?'selected':''}>Geçti</option>
+          <option value="fail" ${item.s==='fail'?'selected':''}>Kaldı</option>
+        </select>
+        ${item.u
+          ? (editing
+              ? `<input class="url-input" value="${esc(item.u)}" placeholder="URL">
+                 <a class="url" href="${esc(item.u)}" target="_blank" rel="noopener" title="Aç">↗</a>`
+              : `<a class="url" href="${esc(item.u)}" target="_blank" rel="noopener">${esc(item.u)}</a>`)
+          : (editing ? `<input class="url-input" placeholder="URL">` : `<span class="url" style="opacity:.5">(URL yok)</span>`)}
+      </div>
+      <textarea class="note" placeholder="Not (hatalar, bulgular…)">${esc(item.n || '')}</textarea>
+    </div>`;
+  div.querySelector('.chk').addEventListener('change', e => {
+    item.s = e.target.checked ? 'pass' : (item.s === 'pass' ? 'pending' : item.s);
+    save(); render();
+  });
+  div.querySelector('.status').addEventListener('change', e => { item.s = e.target.value; save(); render(); });
+  div.querySelector('.note').addEventListener('input', e => { item.n = e.target.value; save(); });
+  const editBtn = div.querySelector('.icon-btn:not(.danger)');
+  if (editBtn) editBtn.addEventListener('click', () => { state.editingId = item.id; render(); });
+  const saveBtn = div.querySelector('.label.editing') && div.querySelector('.label.editing').nextElementSibling;
+  const editInput = div.querySelector('.label.editing');
+  if (editInput) {
+    editInput.focus();
+    const commit = () => { item.t = editInput.value.trim(); state.editingId = null; save(); render(); };
+    editInput.addEventListener('keydown', e => { if (e.key === 'Enter') commit(); if (e.key === 'Escape') { state.editingId = null; render(); } });
+    if (saveBtn) saveBtn.addEventListener('click', commit);
+  }
+  const urlInput = div.querySelector('.url-input');
+  if (urlInput) {
+    urlInput.addEventListener('input', e => { item.u = e.target.value.trim(); save(); });
+    urlInput.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === 'Escape') { state.editingId = null; render(); } });
+  }
+  div.querySelector('.icon-btn.danger').addEventListener('click', () => {
+    cat.items = cat.items.filter(x => x.id !== item.id); save(); render();
+  });
+  return div;
+}
+
+/* ======= Eylemler ======= */
+function toggleCat(id) { state.collapsed[id] = state.collapsed[id] === false; render(); }
+function removeCat(id) { data.categories = data.categories.filter(c => c.id !== id); save(); render(); }
+
+document.getElementById('btnAddCat').addEventListener('click', () => {
+  data.categories.push({ id: uid(), name: 'Yeni Kategori', items: [] });
+  save(); render();
+});
+
+document.getElementById('btnCollapse').addEventListener('click', () => {
+  const allCollapsed = data.categories.every(c => state.collapsed[c.id] !== false);
+  data.categories.forEach(c => state.collapsed[c.id] = allCollapsed);
+  document.getElementById('btnCollapse').textContent = allCollapsed ? 'Tümünü Aç' : 'Tümünü Kapat';
+  render();
+});
+
+/* ======= GitHub senkronizasyonu ======= */
+const GITHUB_REPO = 'selimhanc/site-test-checklist';
+const TOKEN_KEY = 'site-checklist-token';
+const syncStatus = document.getElementById('syncStatus');
+
+function setSync(msg, cls) {
+  syncStatus.textContent = msg;
+  syncStatus.className = 'sync-status' + (cls ? ' ' + cls : '');
+}
+
+function getToken() {
+  let t = localStorage.getItem(TOKEN_KEY);
+  if (!t) {
+    t = prompt('GitHub kişisel erişim token\'ınızı girin (repo + read:org scope):').trim();
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+  }
+  return t;
+}
+
+function gitHubHeaders() {
+  return { 'Authorization': 'Bearer ' + getToken(), 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+}
+
+function b64(s) {
+  return btoa(unescape(encodeURIComponent(s)));
+}
+
+async function gitHubLoad() {
+  const url = 'https://raw.githubusercontent.com/' + GITHUB_REPO + '/main/data.json';
+  try {
+    const r = await fetch(url, { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if (!d || !Array.isArray(d.categories)) throw new Error('geçersiz veri');
+    data = d; save(); render();
+    setSync('GitHub\'dan son kayıt yüklendi', 'ok');
+  } catch(e) {
+    setSync('GitHub verisi yüklenemedi — yerel kayıt kullanılıyor (' + e.message + ')', 'err');
+  }
+}
+
+async function gitHubSave() {
+  const token = getToken();
+  if (!token) { setSync('Token girilmedi', 'err'); return; }
+  setSync('Kaydediliyor…');
+  const content = JSON.stringify(data, null, 2);
+  const api = 'https://api.github.com/repos/' + GITHUB_REPO + '/contents/data.json';
+  let sha = null;
+  try {
+    const existing = await fetch(api, { headers: gitHubHeaders() });
+    if (existing.ok) sha = (await existing.json()).sha;
+    const res = await fetch(api, {
+      method: 'PUT',
+      headers: gitHubHeaders(),
+      body: JSON.stringify({
+        message: 'checklist güncellemesi ' + new Date().toISOString(),
+        content: b64(content),
+        sha: sha || undefined
+      })
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status + ': ' + (await res.text()).slice(0, 200));
+    setSync('GitHub\'a kaydedildi ✓ ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
+  } catch(e) {
+    setSync('Kaydetme başarısız: ' + e.message, 'err');
+  }
+}
+
+document.getElementById('btnSyncLoad').addEventListener('click', gitHubLoad);
+document.getElementById('btnSyncSave').addEventListener('click', gitHubSave);
+
+render();
+gitHubLoad();
+
+document.getElementById('search').addEventListener('input', e => { state.search = e.target.value; render(); });
+
+document.getElementById('btnExport').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'checklist-' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+document.getElementById('btnImport').addEventListener('click', () => document.getElementById('fileInput').click());
+document.getElementById('fileInput').addEventListener('change', e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const d = JSON.parse(r.result);
+      if (!d || !Array.isArray(d.categories)) throw new Error('format hatalı');
+      if (confirm('Mevcut veri JSON içe aktarımıyla değiştirilecek. Devam?')) {
+        data = d; save(); render();
+      }
+    } catch(err) { alert('Geçersiz JSON: ' + err.message); }
+  };
+  r.readAsText(f);
+  e.target.value = '';
+});
+
+document.getElementById('btnReset').addEventListener('click', () => {
+  if (confirm('Tüm değişiklikler silinip varsayılan listeye dönülecek. Devam?')) {
+    data = structuredClone(DEFAULT_DATA); save(); render();
+  }
+});
+
+render();
+</script>
+</body>
+</html>
